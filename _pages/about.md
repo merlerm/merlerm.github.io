@@ -12,10 +12,10 @@ profile:
     <p>Via Sommarive, 18</p>
     <p>Trento, Italy</p>
 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+news: true # includes a list of news items
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I am currently a pre-doctoral researcher at the [FBK NLP](https://nlplab.fbk.eu) in Trento, Italy. Previously, I obtained my MSc degree in Machine Learning, Data Science and Artificial Intelligence from [Aalto University](https://www.aalto.fi/en) in Helsinki, Finland.

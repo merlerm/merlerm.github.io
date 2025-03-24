@@ -6,7 +6,9 @@
           <tr>
             {% if content.certificate_file %}
               <td class="list-group-category-icon">
-                <a href="{{ content.certificate_file | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                <a href="{{ content.certificate_file | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa-solid fa-file-pdf"></i
+                ></a>
               </td>
             {% else %}
               <td class="list-group-category-icon"></td>

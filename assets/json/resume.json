@@ -50,7 +50,9 @@
       "startDate": "2022-02-01",
       "endDate": "2022-06-30",
       "summary": "Worked as a software developer intern in collaboration with the University of Trento.",
-      "highlights": ["Designed and built a prototype for an indoor navigation system specifically targeted for supermarkets, to be used with the company's own location tracking system."]
+      "highlights": [
+        "Designed and built a prototype for an indoor navigation system specifically targeted for supermarkets, to be used with the company's own location tracking system."
+      ]
     }
   ],
   "education": [
@@ -63,7 +65,10 @@
       "startDate": "2022-09-01",
       "endDate": "2024-09-30",
       "score": "5/5, graduated with honors",
-      "courses": ["Thesis: <a href=https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6> <i>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</i></a>, supervised by Prof. Pekka Marttinen.", "Thesis awarded as one of the three best MSc theses of 2024 at the School of Science."],
+      "courses": [
+        "Thesis: <a href=https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6> <i>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</i></a>, supervised by Prof. Pekka Marttinen.",
+        "Thesis awarded as one of the three best MSc theses of 2024 at the School of Science."
+      ],
       "transcript": "transcript_matteo_merler_aalto.pdf"
     },
     {
