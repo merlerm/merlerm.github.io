@@ -1,7 +1,15 @@
-"Alakuijala":
+"dainese":
+  - firstname: ["Nicola"]
+    url: https://www.linkedin.com/in/nicola-dainese-b72a3015b/
+
+"alakuijala":
   - firstname: ["Minttu"]
     url: https://minttualakuijala.com
 
-"Marttinen":
+"marttinen":
   - firstname: ["Pekka"]
     url: https://users.ics.aalto.fi/~pemartti/
+
+"haitsiukevich":
+  - firstname: ["Katsiaryna"]
+    url: https://kateh.ai
