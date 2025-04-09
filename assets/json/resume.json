@@ -6,7 +6,7 @@
     "email": "mmerler@fbk.eu",
     "phone": "+39 342 3646961",
     "url": "https://merlerm.github.io/",
-    "summary": "Upcoming Research Scientist at Fondazione Bruno Kessler (FBK) in Trento, Italy. I am interested in intelligent systems that can learn from experience aided by real-world knowledge.",
+    "summary": "I am a pre-doctoral researcher at FBK NLP in Trento, Italy, with an MSc in Machine Learning, Data Science, and AI from Aalto University in Helsinki. My research focuses on bridging large-scale models (such as LLMs and VLMs) with methods like Reinforcement Learning (RL) and Symbolic Planning (SP). I aim to explore how RL's ability to learn from experience can complement the strengths of LLMs, which currently lack this capacity. I'm particularly interested in model-based RL and world models, investigating how large-scale models can be trained to plan ahead and imagine future states, helping them to adapt to complex reasoning and long-horizon planning beyond pattern matching.",
     "location": {
       "address": "Via Cesarini 25",
       "postalCode": "38121",
