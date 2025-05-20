@@ -32,6 +32,9 @@ ninja.data = [{
           section: "News",},{id: "news-my-master-s-thesis-was-awarded-as-one-of-the-three-best-at-the-aalto-university-school-of-science-in-2024",
           title: 'My Master’s Thesis was awarded as one of the three best at the...',
           description: "",
+          section: "News",},{id: "news-we-released-a-new-preprint-viplan-a-benchmark-for-visual-planning-with-symbolic-predicates-and-vision-language-models",
+          title: 'We released a new preprint: ViPlan: A Benchmark for Visual Planning with Symbolic...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
