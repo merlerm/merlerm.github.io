@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-contact",
+          title: "contact",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
         },{id: "news-our-paper-in-context-symbolic-regression-leveraging-large-language-models-for-function-discovery-has-been-accepted-at-the-acl-2024-student-research-workshop",
           title: 'Our paper “In-Context Symbolic Regression: Leveraging Large Language Models for Function Discovery” has...',
           description: "",
