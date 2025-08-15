@@ -21,6 +21,10 @@ last_updated: true # set to true if you want to display last updated in the foot
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
+# Footer quotes
+quotes:
+  - "The sun will rise and we will try again."
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -298,8 +302,8 @@ jekyll-archives:
   games:
     enabled: [tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

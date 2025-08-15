@@ -9,6 +9,7 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
+  <div id="random-quote" class="mt-2"><em>{{ site.quotes | sample | default: "" }}</em></div>
 {% endcapture %}
 
 {% if site.footer_fixed %}
