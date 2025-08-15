@@ -60,7 +60,7 @@ In the end, after completing my studies in August 2024, I needed to choose if I 
 
 I know that perhaps this whole post is just for me to look back and be nostalgic, but I hope that it might also be useful for someone else who is thinking about studying abroad, or even just moving to a new place. If you are considering it, just go for it, as it will likely be one of the most important experiences of your life. It will help you grow, and you will meet people who will shape your future in ways you cannot even imagine. However, also take it slow, consider your options and make an informed choice, not an impulsive one; this might be obvious, but it's not always easy advice to follow. Choose a place that feels right for you, pay attention to the research groups and professors you want to work with, imagine yourself living there and think if you can see yourself being happy. And if that choice happens to be Helsinki, I can only recommend it. I promise the weather is great in the summer and the winters have their charm, the snow is beautiful, and while the people might indeed be a bit reserved, they are also very welcoming and friendly, especially if you give them a few beers first.
 
-*Kiitos!*
+_Kiitos!_
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
