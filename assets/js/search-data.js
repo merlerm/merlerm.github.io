@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
@@ -30,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact/";
           },
-        },{id: "news-our-paper-in-context-symbolic-regression-leveraging-large-language-models-for-function-discovery-has-been-accepted-at-the-acl-2024-student-research-workshop",
+        },{id: "post-looking-back-at-two-years-in-finland",
+        
+          title: "Looking Back at Two Years in Finland",
+        
+        description: "A reflection on my time pursuing my Master&#39;s degree at Aalto University in Helsinki.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/finland-retrospective/";
+          
+        },
+      },{id: "news-our-paper-in-context-symbolic-regression-leveraging-large-language-models-for-function-discovery-has-been-accepted-at-the-acl-2024-student-research-workshop",
           title: 'Our paper “In-Context Symbolic Regression: Leveraging Large Language Models for Function Discovery” has...',
           description: "",
           section: "News",},{id: "news-our-paper-generating-code-world-models-with-large-language-models-guided-by-monte-carlo-tree-search-has-been-accepted-at-neurips-2024",
