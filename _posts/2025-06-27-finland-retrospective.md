@@ -5,6 +5,7 @@ date: 2025-08-15
 description: A reflection on my time pursuing my Master's degree at Aalto University in Helsinki.
 categories: personal
 thumbnail: assets/blog/finland-retrospective/sunset-cs.jpg
+giscus_comments: true
 ---
 
 I never really wanted to study abroad. I am originally from Trento, a relatively small Italian city right in the middle of the Dolomites. We travelled a lot with my family, for which I'm very grateful, and saw many interesting places and cultures especially in Europe. Despite this, I never saw the appeal of moving away for longer. After deciding to study computer science, I didn't really consider leaving. The University of Trento was, and still is, consistently ranked among the best in Italy, especially for computer science, so I was happy to stay here, without really questioning any alternative. To be fair, it did work out: the education I received was indeed great (particularly thanks to some professors, like my BSc Thesis supervisor, [Alberto Montresor](https://cricca.disi.unitn.it/montresor/) and [Elisa Ricci](https://eliricci.eu), whose course first introduced me to Machine Learning, and got me interested in Reinforcement Learning), and I met great people along the way, some of whom I am still in touch with today.
