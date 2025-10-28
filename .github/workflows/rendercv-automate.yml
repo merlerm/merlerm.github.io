@@ -1,0 +1,69 @@
+name: Render CV, convert YAML->JSON and format
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then python -m pip install --user -r requirements.txt || true; fi
+          # install pyyaml and rendercv CLI
+          python -m pip install --user pyyaml "rendercv[full]" || python -m pip install --user "rendercv[full]"
+
+      - name: Run RenderCV to build PDF
+        run: |
+          # run from repo root so custom theme modules import correctly
+          python -m pip install --user "rendercv[full]" || true
+          echo "Running rendercv..."
+          rendercv render rendercv/resume.yaml \
+            --pdf-path assets/pdf/CV_matteo_merler.pdf \
+            --dont-generate-markdown --dont-generate-html --dont-generate-png
+
+      - name: Convert YAML -> JSON
+        run: |
+          python3 bin/yaml_to_json_resume.py --in rendercv/resume.yaml --out assets/json/resume.json
+
+      - name: Set up Node and Prettier
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install Node deps
+        run: |
+          npm ci
+
+      - name: Run Prettier
+        run: |
+          npx prettier --write "**/*.{json,md,html,liquid,yml,yaml,css,js,ts}" || true
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/json/resume.json || true
+          git add assets/pdf/CV_matteo_merler.pdf || true
+          git add . || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: regenerate resume.json and CV PDF [skip ci]"
+            git push origin HEAD:master
+          fi
