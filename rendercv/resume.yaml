@@ -97,8 +97,8 @@ cv:
       - title: "ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models"
         date: "2025-05-19"
         authors:
-          - "***Matteo Merler***"
-          - "Nicola Dainese"
+          - "***Matteo Merler****"
+          - "Nicola Dainese*"
           - "Minttu Alakuijala"
           - "Giovanni Bonetta"
           - "Pietro Ferrazzi"
@@ -110,8 +110,8 @@ cv:
       - title: "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search"
         date: "2024-12-13"
         authors:
-          - "Nicola Dainese"
-          - "***Matteo Merler***"
+          - "Nicola Dainese*"
+          - "***Matteo Merler****"
           - "Minttu Alakuijala"
           - "Pekka Marttinen"
         journal: "Advances in Neural Information Processing Systems 37 (NeurIPS 2024)"
@@ -119,9 +119,9 @@ cv:
       - title: "In-Context Symbolic Regression: Leveraging Large Language Models for Function Discovery"
         date: "2024-08-01"
         authors:
-          - "***Matteo Merler***"
-          - "Katsiaryna Haitsiukevich"
-          - "Nicola Dainese"
+          - "***Matteo Merler****"
+          - "Katsiaryna Haitsiukevich*"
+          - "Nicola Dainese*"
           - "Pekka Marttinen"
         journal: "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics, Volume 4: Student Research Workshop (ACL 2024 SRW)"
         link: "https://aclanthology.org/2024.acl-srw.49/"
@@ -154,14 +154,30 @@ cv:
         certificate_file: "english_matteo_merler.pdf"
       - label: "German"
         details: "A2 (Basic)"
+    # interests:
+    #   - name: "Sports"
+    #     keywords:
+    #       - "Skiing"
+    #       - "Basketball"
+    #       - "Hiking"
+    #   - name: "Music"
+    #     keywords:
+    #       - "Saxophone Playing"
+    #       - "Singing"
+    #       - "Amateur Composing"
+    #   - name: "Gaming"
+    #     keywords:
+    #       - "Indie Games"
+    #       - "Modding"
+    #       - "Game Development"
 design:
   theme: custom
   page:
     size: a4
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
     show_page_numbering: false
     show_last_updated_date: true
   colors:

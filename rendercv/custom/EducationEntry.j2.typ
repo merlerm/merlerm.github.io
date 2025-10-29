@@ -4,6 +4,8 @@
   left-column-width: <<design.entry_types.education_entry.degree_column_width>>,
   left-content: [<<degree_column_template>>],
   middle-content: [
+  #block([
+  #set text(hyphenate: false)
   ((* if entry.link *))
   #box(link("<<entry.link>>")[#strong[<<entry.institution>>]])
   ((* else *))
@@ -15,6 +17,7 @@
   ((* if entry.location *))
   -- <<entry.location>>
   ((* endif *))
+  ])
     ((* if design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv" *))
     ((* if main_column_second_row_template *))
     #v(-design-text-leading)
@@ -43,6 +46,8 @@
 // YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
+  #block([
+  #set text(hyphenate: false)
   ((* if entry.link *))
   #box(link("<<entry.link>>")[#strong[<<entry.institution>>]])
   ((* else *))
@@ -54,6 +59,7 @@
   ((* if entry.location *))
   -- <<entry.location>>
   ((* endif *))
+  ])
     ((* if design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv" *))
     ((* if main_column_second_row_template *))
     #v(-design-text-leading)
@@ -88,6 +94,8 @@
     <<degree_column_template>>
   ],
   right-content: [
+  #block([
+  #set text(hyphenate: false)
   ((* if entry.link *))
   #box(link("<<entry.link>>")[#strong[<<entry.institution>>]])
   ((* else *))
@@ -99,6 +107,7 @@
   ((* if entry.location *))
   -- <<entry.location>>
   ((* endif *))
+  ])
     ((* if design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv" *))
     ((* if main_column_second_row_template *))
     #v(-design-text-leading)
@@ -125,6 +134,8 @@
 
 #one-col-entry(
   content: [
+  #block([
+  #set text(hyphenate: false)
   ((* if entry.link *))
   #box(link("<<entry.link>>")[#strong[<<entry.institution>>]])
   ((* else *))
@@ -136,6 +147,7 @@
   ((* if entry.location *))
   -- <<entry.location>>
   ((* endif *))
+  ])
 
     ((* if main_column_second_row_template *))
     #v(-design-text-leading)

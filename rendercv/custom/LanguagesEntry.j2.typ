@@ -7,7 +7,7 @@
 #two-col-entry(
   left-column-width: 4cm,
   left-content: [
-    #strong[<<entry.language>>]
+    #block([#set text(hyphenate: false); #strong[<<entry.language>>]])
   ],
   right-content: [
     #align(right, [#emph[<<entry.fluency or "">>]])

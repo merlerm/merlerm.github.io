@@ -13,6 +13,7 @@ from pathlib import Path
 import argparse
 import json
 import sys
+import re
 
 try:
     import yaml
@@ -33,11 +34,12 @@ def convert(yaml_data: dict) -> dict:
         """
         if not s:
             return s
-        import re
 
         # convert markdown links [text](url) -> <a href="url">text</a>
         s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"<a href=\"\2\">\1</a>", s)
-        # convert bold **text** -> <strong>text</strong>
+        # convert bold ***text*** -> <strong>text</strong>
+        s = re.sub(r"\*\*\*(.+?)\*\*\*", r"<strong>\1</strong>", s)
+        # if leftover bold with ***text***, convert to <strong>text</strong>
         s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
         return s
 

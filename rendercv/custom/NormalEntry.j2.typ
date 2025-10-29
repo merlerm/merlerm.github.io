@@ -3,7 +3,9 @@
   left-content: [
   ((* if entry.company or entry.url *))
   #align(left, [
-    ((* if entry.url *)) #box(link("<<entry.url>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)),
+  #block([#set text(hyphenate: false)
+  ((* if entry.url *)) #box(link("<<entry.url>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)),
+  ])
     #strong[<<entry.position or entry.name or entry.title>>]
   ])
   ((* if entry.location *)) -- <<entry.location>>((* endif *))
@@ -35,7 +37,9 @@
   content: [
   ((* if entry.company or entry.url *))
   #align(left, [
-    ((* if entry.url *)) #box(link("<<entry.url>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)),
+  #block([#set text(hyphenate: false)
+  ((* if entry.url *)) #box(link("<<entry.url>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)),
+  ])
     #strong[<<entry.position or entry.name or entry.title>>]
   ])
   ((* if entry.location *)) -- <<entry.location>>((* endif *))
