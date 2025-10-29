@@ -14,3 +14,5 @@ node_modules/
 vendor
 .idea
 settings.json
+*.pyc
+rendercv_output/
