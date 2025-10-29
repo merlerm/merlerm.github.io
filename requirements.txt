@@ -1,1 +1,3 @@
 nbconvert
+rendercv[full]==2.3
+pyyaml
