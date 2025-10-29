@@ -174,10 +174,10 @@ design:
   theme: custom
   page:
     size: a4
-    top_margin: 1.5cm
-    bottom_margin: 1.5cm
-    left_margin: 1.5cm
-    right_margin: 1.5cm
+    top_margin: 1.75cm
+    bottom_margin: 1.75cm
+    left_margin: 1.75cm
+    right_margin: 1.75cm
     show_page_numbering: false
     show_last_updated_date: true
   colors:
@@ -209,7 +209,7 @@ design:
     use_icons_for_connections: true
     alignment: left
   section_titles:
-    type: "with-parial-line"
+    type: "with-partial-line"
     font_family: Raleway
     font_size: 1.4em
     bold: false
