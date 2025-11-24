@@ -123,15 +123,6 @@
       "summary": "<strong>Matteo Merler</strong>*, Katsiaryna Haitsiukevich*, Nicola Dainese*, Pekka Marttinen"
     }
   ],
-  "awards": [
-    {
-      "title": "Master's Thesis Award",
-      "summary": "My Master's thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
-      "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
-      "date": "2025-04-03",
-      "awarder": "Aalto University, School of Science"
-    }
-  ],
   "volunteer": [
     {
       "organization": "Libera Associazioni Nomi e Numeri Contro le Mafie",
@@ -148,6 +139,15 @@
       "startDate": "2018-08-01",
       "endDate": "2018-08-31",
       "summary": "I participated in a volunteering camp experience in Rijeka, Croatia where we helped different families and associations in need around the city and in mainland Croatia while living together in a shared home."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Master's Thesis Award",
+      "summary": "My Master's thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
+      "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
+      "date": "2025-04-03",
+      "awarder": "Aalto University, School of Science"
     }
   ],
   "languages": [
