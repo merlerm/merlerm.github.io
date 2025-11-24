@@ -93,7 +93,7 @@ cv:
           - "Giovanni Bonetta"
           - "Bernardo Magnini"
         journal: "ECAI Workshop on AI-based Planning for Complex Real-World Applications (CAIPI'25)"
-        link: "https://merlerm.github.io/assets/pdf/papers/merler2025guiding.pdf"
+        link: "https://ceur-ws.org/Vol-4103/paper4.pdf"
       - title: "ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models"
         date: "2025-05-19"
         authors:

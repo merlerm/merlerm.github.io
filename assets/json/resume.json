@@ -98,7 +98,7 @@
       "name": "Guiding Reinforcement Learning with Selective Vision-Language Model Supervision",
       "publisher": "ECAI Workshop on AI-based Planning for Complex Real-World Applications (CAIPI'25)",
       "releaseDate": "2025-10-25",
-      "url": "https://merlerm.github.io/assets/pdf/papers/merler2025guiding.pdf",
+      "url": "https://ceur-ws.org/Vol-4103/paper4.pdf",
       "summary": "<strong>Matteo Merler</strong>, Giovanni Bonetta, Bernardo Magnini"
     },
     {
@@ -123,6 +123,15 @@
       "summary": "<strong>Matteo Merler</strong>*, Katsiaryna Haitsiukevich*, Nicola Dainese*, Pekka Marttinen"
     }
   ],
+  "awards": [
+    {
+      "title": "Master's Thesis Award",
+      "summary": "My Master's thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
+      "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
+      "date": "2025-04-03",
+      "awarder": "Aalto University, School of Science"
+    }
+  ],
   "volunteer": [
     {
       "organization": "Libera Associazioni Nomi e Numeri Contro le Mafie",
@@ -139,15 +148,6 @@
       "startDate": "2018-08-01",
       "endDate": "2018-08-31",
       "summary": "I participated in a volunteering camp experience in Rijeka, Croatia where we helped different families and associations in need around the city and in mainland Croatia while living together in a shared home."
-    }
-  ],
-  "awards": [
-    {
-      "title": "Master's Thesis Award",
-      "summary": "My Master's thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
-      "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
-      "date": "2025-04-03",
-      "awarder": "Aalto University, School of Science"
     }
   ],
   "languages": [
