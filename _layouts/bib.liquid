@@ -1,10 +1,35 @@
 ---
 ---
+{%- comment -%}Build display label: arXiv→Preprint, detect workshops, append year{%- endcomment -%}
+{%- assign badge_label = entry.abbr -%}
+{%- assign badge_url = null -%}
+{%- assign skip_year = false -%}
+{%- if entry.abbr == 'arXiv' -%}
+  {%- assign badge_label = 'Preprint' -%}
+  {%- assign skip_year = true -%}
+{%- elsif entry.booktitle and entry.booktitle contains 'Workshop' -%}
+  {%- if entry.booktitle contains 'CAIPI' -%}
+    {%- assign badge_label = 'CAIPI @ ECAI' -%}
+    {%- assign badge_url = 'https://www.hsu-hh.de/imb/en/organized-events/ecai25-caipi' -%}
+  {%- elsif entry.booktitle contains 'Student Research Workshop' -%}
+    {%- assign badge_label = 'SRW @ ' | append: entry.abbr -%}
+  {%- else -%}
+    {%- assign badge_label = entry.abbr -%}
+  {%- endif -%}
+{%- elsif entry.booktitle and entry.booktitle contains 'Student Research Workshop' -%}
+  {%- assign badge_label = 'SRW @ ' | append: entry.abbr -%}
+{%- endif -%}
+{%- if entry.year and skip_year != true -%}
+  {%- assign badge_label = badge_label | append: ' ' | append: entry.year -%}
+{%- endif -%}
+{%- if badge_url == null and site.data.venues[entry.abbr] -%}
+  {%- assign badge_url = site.data.venues[entry.abbr].url -%}
+{%- endif -%}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
+        {%- if site.data.venues[entry.abbr] or badge_url -%}
           {% assign venue_style = null %}
           {% if site.data.venues[entry.abbr].color != blank %}
             {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
@@ -15,14 +40,14 @@
               {{ venue_style }}
             {% endif -%}
           >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+            {% if badge_url %}
+              <a href="{{ badge_url }}">{{ badge_label }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{- badge_label -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100">{{ badge_label }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}

@@ -52,13 +52,13 @@ rss_icon: false
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1060px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -511,7 +511,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Datatype:wdth,wght@100,400;112.5,400;112.5,500;112.5,600;112.5,700;125,400;125,600;125,700&family=Inter:wght@300;400;500;600&display=swap"
   highlightjs:
     integrity:
       css:

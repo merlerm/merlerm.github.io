@@ -1,33 +1,17 @@
-<div class="list-groups">
+<div class="languages-grid">
   {% for content in data[1] %}
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            {% if content.certificate_file %}
-              <td class="list-group-category-icon">
-                <a href="{{ content.certificate_file | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer"
-                  ><i class="fa-solid fa-file-pdf"></i
-                ></a>
-              </td>
-            {% else %}
-              <td class="list-group-category-icon"></td>
-            {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.language }}</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.fluency }}</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="language-item">
+      <div class="language-item-header">
+        <div>
+          <div class="language-name">{{ content.language }}</div>
+          <div class="language-fluency">{{ content.fluency }}</div>
+        </div>
+        {% if content.certificate_file %}
+          <a href="{{ content.certificate_file | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btncv">
+            <i class="fa-solid fa-file-pdf"></i> Certificate
+          </a>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>

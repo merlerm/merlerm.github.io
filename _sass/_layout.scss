@@ -15,11 +15,28 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+
+  // Background glow — top-right
+  &::after {
+    content: '';
+    position: fixed;
+    top: -200px;
+    right: -100px;
+    width: 800px;
+    height: 700px;
+    z-index: -1;
+    background: radial-gradient(ellipse at center, rgba(8, 145, 178, 0.06) 0%, rgba(5, 150, 105, 0.03) 40%, transparent 68%);
+    pointer-events: none;
+  }
+}
+
+html[data-theme="dark"] body::after {
+  background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.07) 0%, rgba(52, 211, 153, 0.03) 40%, transparent 68%);
 }
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
-  padding-top: 56px;
+  padding-top: 72px;
 }
 
 body.sticky-bottom-footer {
@@ -28,7 +45,9 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: $max-content-width;
+  max-width: $max-content-width !important;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 // Profile
@@ -37,17 +56,3 @@ body.sticky-bottom-footer {
     width: 100%;
   }
 }
-
-// TODO: redefine content layout.
-
-/******************************************************************************
- * Publications
- ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.

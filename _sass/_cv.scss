@@ -12,13 +12,63 @@ table.table-cv {
   td,
   th {
     padding: 1px;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.9rem;
   }
 }
 
+// Summary fields in CV should use body font, not Datatype
+// But titles (position, degree) keep Datatype
+.card-text h6 {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+.card-text h6.title {
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  font-weight: 600;
+}
+
+// Basics section: headers in Datatype font
+.table-cv-map {
+  td.font-weight-bold,
+  td.p-1.pr-2 {
+    font-family: 'Datatype', monospace;
+    font-stretch: semi-expanded;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--global-theme-color) !important;
+  }
+}
+
+// Date badges: match publication badge style
+.card-text .badge {
+  background-color: var(--global-theme-color) !important;
+  color: white !important;
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  font-weight: 600;
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+// Consistent PDF icon size inside btncv buttons
+a.btncv i.fa-file-pdf {
+  font-size: 0.7rem;
+}
+
 a.btncv {
-  color: var(--global-text-color) !important;
-  border: 1px solid var(--global-text-color) !important;
-  border-radius: 0.125rem;
+  color: var(--global-text-color-light) !important;
+  border: 1px solid var(--global-divider-color) !important;
+  border-radius: 5px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -30,12 +80,53 @@ a.btncv {
   vertical-align: middle;
   text-transform: uppercase;
   white-space: nowrap;
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  transition: all 0.15s;
 }
 
 a.btncv:hover {
   color: var(--global-theme-color) !important;
   border-color: var(--global-theme-color) !important;
+  background: var(--global-accent-subtle);
   text-decoration: none !important;
+}
+
+// Languages section
+.languages-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.language-item {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 14px 20px;
+  min-width: 160px;
+}
+
+.language-item-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.language-name {
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--global-theme-color) !important;
+  margin-bottom: 2px;
+}
+
+.language-fluency {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
 }
 
 /*****************************
@@ -45,31 +136,38 @@ a.btncv:hover {
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 i.iconlocation {
-  color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
   font-size: 0.8rem;
 }
 
 i.iconinstitution {
-  color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
   font-size: 0.95rem;
   margin-right: 0.3rem;
 }
 
 i.icondepartment {
-  color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
   font-size: 0.8rem;
   margin-right: 0.3rem;
 }
 
 table.institution {
   margin-bottom: 1rem;
+
+  td,
+  th {
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
 }
 
 td.department {
   font-size: 0.8rem;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 div.container-links {
@@ -115,35 +213,42 @@ div.list-group {
 }
 
 td.list-group-category {
-  color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
   margin-bottom: 0.5rem;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 td.list-group-category-icon {
   font-size: 0.8rem;
-  color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
   width: 1.4rem;
   padding-right: 0.4rem;
 }
 
 td.list-group-name {
   font-size: 0.8rem;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 td.list-group-level {
   font-size: 0.8rem;
   padding-left: 0.5rem;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 td.list-group-school {
   font-size: 0.7rem;
   padding-left: 0.5rem;
   text-align: center;
+  font-family: 'Inter', -apple-system, sans-serif;
 }
 
 p.list-group-time {
   font-size: 0.7rem;
   padding-left: 0.5rem;
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  color: var(--global-text-muted);
 }
 
 td.list-group-link {
@@ -176,9 +281,12 @@ ul.timeline li {
 span.badge-toc {
   color: var(--global-bg-color);
   background-color: var(--global-theme-color);
-  border-radius: 0.125rem;
+  border-radius: 4px;
   padding: 0.125rem 0.5rem 0.125rem 0.5rem;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
+  font-family: 'Datatype', monospace;
+  font-stretch: semi-expanded;
+  font-size: 0.72rem;
   display: inline-block;
   inline-size: fit-content;
 }
@@ -194,27 +302,3 @@ ul.timeline li::before {
   left: 2px;
   top: -0.5rem;
 }
-
-/*ul.timeline::before {
-     content: "●";
-     font-size: 1em;
-     display: inline-block;
-     margin: 0;
-     padding: 0;
-     position: relative;
-     left: -2px;
-     top: 0.4rem;
-     color: var(--global-text-color);
-}
- ul.timeline::after {
-     content: "●";
-     font-size: 1em;
-     display: inline-block;
-     margin: 0;
-     padding: 0;
-     position: relative;
-     left: -2px;
-     top: -1rem;
-     color: var(--global-text-color);
-}
-*/

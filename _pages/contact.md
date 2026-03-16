@@ -6,6 +6,34 @@ nav_order: 20
 permalink: /contact/
 ---
 
-The best way to reach me is through my institutional email at [<i class="fa-solid fa-envelope"></i> mmerler@fbk.eu](mailto:mmerler@fbk.eu). If you prefer, you can also contact me through my personal email at [<i class="fa-solid fa-envelope"></i> matteo.merler@gmail.com](mailto:matteo.merler@gmail.com) or find me on [<i class="fa-brands fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/merlerm/). I am not active on other social media platforms (or I keep them private) so please do not try to reach me there.
+<div class="contact-content">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <a href="mailto:mmerler@fbk.eu">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="card-label">Work email</div>
+        <div class="card-value">mmerler@fbk.eu</div>
+      </a>
+    </div>
+    <div class="contact-card">
+      <a href="mailto:matteo.merler@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <div class="card-label">Personal email</div>
+        <div class="card-value">matteo.merler@gmail.com</div>
+      </a>
+    </div>
+    <div class="contact-card">
+      <a href="https://linkedin.com/in/merlerm">
+        <i class="fa-brands fa-linkedin"></i>
+        <div class="card-label">LinkedIn</div>
+        <div class="card-value">linkedin.com/in/merlerm</div>
+      </a>
+    </div>
+  </div>
 
-I am always happy to discuss about research topics or find potential collaborations, so feel free to reach out for anything!
+  <p>
+    I am always happy to discuss about research topics or find potential collaborations, so feel free to reach out for anything!
+    <br>
+    I am not active on other social media platforms (or I keep them private) so please do not try to reach me there.
+  </p>
+</div>
