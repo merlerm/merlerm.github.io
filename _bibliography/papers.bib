@@ -15,7 +15,7 @@
   month       = {October},
   address     = {Bologna, Italy},
   abstract    = {We propose a framework that augments a model-free Reinforcement Learning (RL) agent with selective guidance from a pre-trained Vision-Language Model (VLM). Our system is designed to assist the RL agent, which starts from scratch and has no prior notion of the environment, by leveraging the VLM’s common-sense knowledge to support its decision making. Rather than relying on the VLM at every timestep, the agent monitors its own uncertainty during training and defers to the VLM only when it is unsure about which action to take. Uncertainty is measured using the entropy of the policy distribution, and guidance is triggered when this entropy exceeds a predefined threshold. To reduce computational overhead, we introduce a stochastic gating mechanism that limits the frequency of VLM queries, along with a cache that stores past VLM responses for reuse. Experiments show that our method leads to more stable learning dynamics compared to standard PPO, with reduced variance across runs. In the \texttt{FrozenLake} environment, we observe that VLM guidance is primarily utilized during the early stages of training, gradually diminishing as the agent becomes more confident. This suggests that our selective guidance mechanism can support early exploration without hindering long-term autonomous behavior.},
-  selected    = {true},
+  selected    = {false},
   html        = {https://ceur-ws.org/Vol-4103/},
   pdf         = {https://ceur-ws.org/Vol-4103/paper4.pdf},
   preview     = {vlm_guidance.png},

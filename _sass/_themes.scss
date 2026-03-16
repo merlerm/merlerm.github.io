@@ -6,29 +6,32 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #FFFFFF;
+  --global-bg-secondary: #F6F8FA;
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$green-color};
-  --global-hover-color: #{$green-color-bright};
+  --global-text-color: #1F2937;
+  --global-text-color-light: #4B5563;
+  --global-text-muted: #9CA3AF;
+  --global-theme-color: #059669;
+  --global-hover-color: #10B981;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
+  --global-accent2: #0891B2;
+  --global-accent-subtle: rgba(5, 150, 105, 0.06);
+  --global-footer-bg-color: #FFFFFF;
+  --global-footer-text-color: #9CA3AF;
+  --global-footer-link-color: #059669;
   --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
+  --global-divider-color: #E5E7EB;
+  --global-border-light: #F3F4F6;
+  --global-card-bg-color: #FFFFFF;
   --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
+  --global-gradient: linear-gradient(135deg, #059669, #0891B2);
+  --global-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --global-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --global-back-to-top-bg-color: rgba(0, 0, 0, 0.4);
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  --global-newsletter-text-color: #1F2937;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -44,9 +47,7 @@
   --global-danger-block-title: #c00;
 
   #light-toggle-system {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    display: flex;
   }
 
   #light-toggle-dark {
@@ -78,41 +79,44 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #0B0E18;
+  --global-bg-secondary: #12162A;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$green-color};
-  --global-hover-color: #{$green-color-bright};
+  --global-text-color: #E5E7EB;
+  --global-text-color-light: #B0B8C4;
+  --global-text-muted: #6B7280;
+  --global-theme-color: #34D399;
+  --global-hover-color: #6EE7B7;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
+  --global-accent2: #22D3EE;
+  --global-accent-subtle: rgba(52, 211, 153, 0.08);
+  --global-footer-bg-color: #0B0E18;
+  --global-footer-text-color: #6B7280;
+  --global-footer-link-color: #34D399;
+  --global-distill-app-color: #9CA3AF;
+  --global-divider-color: #1F2937;
+  --global-border-light: #1A1F33;
+  --global-card-bg-color: #0E1220;
+  --global-gradient: linear-gradient(135deg, #34D399, #22D3EE);
+  --global-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --global-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --global-back-to-top-bg-color: rgba(255, 255, 255, 0.5);
   --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+  --global-newsletter-bg-color: #12162A;
+  --global-newsletter-text-color: #E5E7EB;
 
   --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
+  --global-tip-block-bg: #1a3a2a;
+  --global-tip-block-text: #a8e6c8;
+  --global-tip-block-title: #42b983;
   --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-warning-block-bg: #3a3520;
+  --global-warning-block-text: #f0e0a0;
+  --global-warning-block-title: #e7c000;
+  --global-danger-block: #ff4444;
+  --global-danger-block-bg: #3a2020;
+  --global-danger-block-text: #ffa0a0;
+  --global-danger-block-title: #ff4444;
 
   .only-light {
     display: none;
@@ -120,6 +124,14 @@ html[data-theme="dark"] {
 
   .only-dark {
     display: block;
+  }
+
+  body::after {
+    background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.06) 0%, rgba(52, 211, 153, 0.03) 40%, transparent 68%);
+  }
+
+  body::before {
+    background: radial-gradient(ellipse at center, rgba(52, 211, 153, 0.06) 0%, rgba(34, 211, 238, 0.03) 40%, transparent 68%);
   }
 }
 
@@ -129,9 +141,7 @@ html[data-theme-setting="dark"] {
   }
 
   #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    display: flex;
   }
 
   #light-toggle-light {
@@ -154,8 +164,6 @@ html[data-theme-setting="light"] {
   }
 
   #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    display: flex;
   }
 }
