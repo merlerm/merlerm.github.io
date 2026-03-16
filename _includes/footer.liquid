@@ -9,7 +9,21 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
-  <div id="random-quote" class="mt-2"><em>{{ site.quotes | sample | default: "" }}</em></div>
+  {% if site.quotes %}
+    <div id="random-quote" class="mt-2"><em id="random-quote-text">{{ site.quotes | first | default: "" }}</em></div>
+    <script>
+      (function() {
+        var quotes = {{ site.quotes | jsonify }};
+        if (Array.isArray(quotes) && quotes.length) {
+          var quote = quotes[Math.floor(Math.random() * quotes.length)];
+          var target = document.getElementById('random-quote-text');
+          if (target && typeof quote === 'string') {
+            target.textContent = quote;
+          }
+        }
+      })();
+    </script>
+  {% endif %}
 {% endcapture %}
 
 {% if site.footer_fixed %}
