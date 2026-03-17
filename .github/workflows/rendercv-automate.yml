@@ -28,14 +28,10 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then python -m pip install --user -r requirements.txt || true; fi
-          # install pyyaml and rendercv CLI
-          python -m pip install --user pyyaml "rendercv[full]" || python -m pip install --user "rendercv[full]"
+          python -m pip install -r requirements.txt
 
       - name: Run RenderCV to build PDF
         run: |
-          # run from repo root so custom theme modules import correctly
-          python -m pip install --user "rendercv[full]" || true
           echo "Running rendercv..."
           rendercv render rendercv/resume.yaml \
             --pdf-path assets/pdf/CV_matteo_merler.pdf \

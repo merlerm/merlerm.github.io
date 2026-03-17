@@ -5,24 +5,46 @@
 // Typography
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--global-text-color) !important;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 
   // Override Bootstrap's hardcoded #212529 on common elements
-  .card, .card-body, .card-text,
+  .card,
+  .card-body,
+  .card-text,
   .list-group-item,
-  .table, table, td, th,
-  h1, h2, h3, h4, h5, h6,
-  p, li, span, div, label {
+  .table,
+  table,
+  td,
+  th,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  span,
+  div,
+  label {
     color: var(--global-text-color) !important;
   }
 
   // Background glows
-  &::after, &::before {
-    content: '';
+  &::after,
+  &::before {
+    content: "";
     position: fixed;
     z-index: -1;
     pointer-events: none;
@@ -68,7 +90,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-weight: 600;
   line-height: 1.3;
@@ -118,7 +140,7 @@ table.table a {
   display: inline;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -247,7 +269,7 @@ ul.task-list input[type="checkbox"] {
 // Caption
 
 .caption {
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-size: 0.75rem;
   margin-top: 0.75rem;
@@ -262,7 +284,9 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 10px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 
   &:hover {
     border-color: var(--global-theme-color);
@@ -298,7 +322,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
 
     p {
@@ -380,7 +404,7 @@ ul.task-list input[type="checkbox"] {
 
 .dropdown-item {
   color: var(--global-text-color);
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-size: 0.82rem;
 
@@ -399,7 +423,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-weight: 600;
     font-size: 1.25rem;
@@ -418,7 +442,7 @@ ul.task-list input[type="checkbox"] {
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 13px;
@@ -442,7 +466,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color-light);
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-weight: 500;
     font-size: 1rem;
@@ -453,7 +477,7 @@ ul.task-list input[type="checkbox"] {
     white-space: nowrap;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 2px;
       left: 12px;
@@ -589,7 +613,7 @@ ul.task-list input[type="checkbox"] {
 
 #search-toggle {
   .nav-link {
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-size: 0.72rem;
     display: flex;
@@ -753,7 +777,7 @@ footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-size: 0.75rem;
   color: var(--global-text-muted);
@@ -770,7 +794,9 @@ footer.sticky-bottom {
     background-position: left bottom;
     background-repeat: no-repeat;
     padding-bottom: 1px;
-    transition: background-size 0.4s ease, color 0.2s;
+    transition:
+      background-size 0.4s ease,
+      color 0.2s;
 
     &::before {
       display: none !important;
@@ -815,28 +841,58 @@ footer.sticky-bottom {
   color: var(--global-text-color) !important;
 
   // Override Bootstrap's hardcoded colors on CV elements
-  .card, .card-body, .card-text,
+  .card,
+  .card-body,
+  .card-text,
   .list-group-item,
-  .table, table, td, th,
-  h1, h2, h3, h4, h5, h6,
-  p, li, span, div, label,
-  ul, ol, dl, dt, dd, small, strong, em, b, i:not([class]) {
+  .table,
+  table,
+  td,
+  th,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  span,
+  div,
+  label,
+  ul,
+  ol,
+  dl,
+  dt,
+  dd,
+  small,
+  strong,
+  em,
+  b,
+  i:not([class]) {
     color: var(--global-text-color) !important;
   }
 
   // Accent colors
-  .badge, .badge-toc {
+  .badge,
+  .badge-toc {
     color: var(--global-card-bg-color) !important;
   }
-  i.iconlocation, i.iconinstitution, i.icondepartment,
-  i.fa-solid, i.fa-regular, i.fas, i.far {
+  i.iconlocation,
+  i.iconinstitution,
+  i.icondepartment,
+  i.fa-solid,
+  i.fa-regular,
+  i.fas,
+  i.far {
     color: var(--global-theme-color) !important;
   }
   .table-cv-map td.font-weight-bold,
   .table-cv-map td.p-1.pr-2 {
     color: var(--global-theme-color) !important;
   }
-  td.list-group-category, td.list-group-category-icon {
+  td.list-group-category,
+  td.list-group-category-icon {
     color: var(--global-theme-color) !important;
   }
   .language-name {
@@ -847,7 +903,9 @@ footer.sticky-bottom {
   }
   a.btncv {
     color: var(--global-text-color-light) !important;
-    i { color: inherit !important; }
+    i {
+      color: inherit !important;
+    }
   }
   a.btncv:hover {
     color: var(--global-theme-color) !important;
@@ -861,7 +919,7 @@ footer.sticky-bottom {
     .card-title {
       font-size: 1.4rem;
       color: var(--global-text-color);
-      font-family: 'Datatype', monospace;
+      font-family: "Datatype", monospace;
       font-stretch: semi-expanded;
     }
 
@@ -994,7 +1052,7 @@ footer.sticky-bottom {
 
     .post-meta {
       color: var(--global-text-muted);
-      font-family: 'Datatype', monospace;
+      font-family: "Datatype", monospace;
       font-stretch: semi-expanded;
       font-size: 0.75rem;
       margin-bottom: 0;
@@ -1002,7 +1060,7 @@ footer.sticky-bottom {
 
     .post-tags {
       color: var(--global-text-muted);
-      font-family: 'Datatype', monospace;
+      font-family: "Datatype", monospace;
       font-stretch: semi-expanded;
       font-size: 0.7rem;
       padding-top: 0.25rem;
@@ -1095,7 +1153,7 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: expanded;
   }
 }
@@ -1111,13 +1169,15 @@ footer.sticky-bottom {
     margin: 0;
   }
 
-  .col-sm-2, .col.col-sm-2 {
+  .col-sm-2,
+  .col.col-sm-2 {
     flex: 0 0 130px;
     width: 130px;
     padding-left: 0;
   }
 
-  .col-sm-8, .col-sm-10 {
+  .col-sm-8,
+  .col-sm-10 {
     flex: 1 !important;
     max-width: 100% !important;
     min-width: 0;
@@ -1146,7 +1206,7 @@ footer.sticky-bottom {
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: expanded;
     font-weight: 700;
   }
@@ -1170,7 +1230,7 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
-          font-family: 'Datatype', monospace;
+          font-family: "Datatype", monospace;
           font-stretch: semi-expanded;
           font-weight: 600;
           font-size: 0.65rem;
@@ -1246,7 +1306,7 @@ footer.sticky-bottom {
           padding-bottom: 0.25rem;
           margin-left: 0;
           border-radius: 5px;
-          font-family: 'Datatype', monospace;
+          font-family: "Datatype", monospace;
           font-stretch: semi-expanded;
           font-size: 0.72rem;
           transition: all 0.15s;
@@ -1347,7 +1407,7 @@ pre {
 }
 
 code {
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-size: 0.88em;
   color: var(--global-theme-color);
@@ -1369,7 +1429,7 @@ html.transition *:after {
 .post {
   .post-meta {
     color: var(--global-text-muted);
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-size: 0.75rem;
     margin-bottom: 0;
@@ -1377,7 +1437,7 @@ html.transition *:after {
 
   .post-tags {
     color: var(--global-text-muted);
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-size: 0.7rem;
     padding-top: 0.25rem;
@@ -1584,7 +1644,7 @@ nav[data-toggle="toc"] {
 
   .post-meta {
     color: var(--global-text-muted);
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-size: 0.75rem;
     margin-bottom: 0;
@@ -1607,14 +1667,16 @@ nav[data-toggle="toc"] {
 
   .nav-link,
   nav[data-toggle="toc"] .nav > li > a {
-    font-family: 'Datatype', monospace !important;
+    font-family: "Datatype", monospace !important;
     font-stretch: semi-expanded !important;
     font-weight: 500 !important;
     font-size: 0.92rem !important;
     color: var(--global-text-color-light) !important;
     padding: 6px 16px !important;
     border-left: 1px solid transparent !important;
-    transition: color 0.2s, border-color 0.2s;
+    transition:
+      color 0.2s,
+      border-color 0.2s;
   }
 
   .nav-link:hover,
@@ -1709,7 +1771,7 @@ ninja-keys::part(ninja-input-wrapper) {
   box-shadow: var(--global-shadow-sm);
   border-radius: 8px;
   padding: 8px 14px;
-  font-family: 'Datatype', monospace;
+  font-family: "Datatype", monospace;
   font-stretch: semi-expanded;
   font-size: 0.82rem;
   transition: border-color 0.2s;
@@ -1936,7 +1998,7 @@ figure.cover {
   }
 
   &::after {
-    content: '';
+    content: "";
     flex: 1;
     height: 1px;
     background: var(--global-gradient);
@@ -1973,7 +2035,7 @@ figure.cover {
   }
 
   .profile-name {
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-weight: 700;
     font-size: 1.75rem;
@@ -2061,7 +2123,7 @@ figure.cover {
       display: inline;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -1px;
         left: 0;
@@ -2128,7 +2190,7 @@ figure.cover {
     }
 
     th {
-      font-family: 'Datatype', monospace;
+      font-family: "Datatype", monospace;
       font-stretch: semi-expanded;
       font-size: 0.82rem;
       font-weight: 400;
@@ -2161,7 +2223,7 @@ figure.cover {
     display: inline;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -1px;
       left: 0;
@@ -2198,7 +2260,9 @@ figure.cover {
   border-radius: 10px;
   padding: 20px 16px;
   text-align: center;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   background: var(--global-card-bg-color);
 
   &:hover {
@@ -2223,7 +2287,7 @@ figure.cover {
   }
 
   .card-label {
-    font-family: 'Datatype', monospace;
+    font-family: "Datatype", monospace;
     font-stretch: semi-expanded;
     font-size: 0.68rem;
     color: var(--global-text-muted);
@@ -2262,7 +2326,8 @@ figure.cover {
 // Mobile responsive
 @media (max-width: 768px) {
   // Prevent any horizontal overflow
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     max-width: 100vw;
   }
@@ -2365,7 +2430,8 @@ figure.cover {
       flex-wrap: wrap !important;
     }
 
-    .col-sm-2, .col.col-sm-2 {
+    .col-sm-2,
+    .col.col-sm-2 {
       flex: 0 0 100% !important;
       width: 100% !important;
       margin-bottom: 8px;
@@ -2383,7 +2449,8 @@ figure.cover {
       }
     }
 
-    .col-sm-8, .col-sm-10 {
+    .col-sm-8,
+    .col-sm-10 {
       flex: 0 0 100% !important;
       max-width: 100% !important;
 

@@ -51,7 +51,7 @@ def convert(yaml_data: dict) -> dict:
             return s
 
         # convert markdown links [text](url) -> <a href="url">text</a>
-        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"<a href=\"\2\">\1</a>", s)
+        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", lambda m: '<a href="' + m.group(2) + '">' + m.group(1) + '</a>', s)
         # convert bold ***text*** -> <strong>text</strong>
         s = re.sub(r"\*\*\*(.+?)\*\*\*", r"<strong>\1</strong>", s)
         # if leftover bold with ***text***, convert to <strong>text</strong>

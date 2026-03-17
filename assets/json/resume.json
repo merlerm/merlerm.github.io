@@ -17,7 +17,7 @@
       "url": "https://www.fbk.eu/en/",
       "startDate": "2025-01-07",
       "endDate": "present",
-      "summary": "Working as a pre-doctoral researcher (\"Researcher 4 contract\") in the <a href=\\\"https://nlplab.fbk.eu/\\\">Natural Language Processing Lab</a> under the supervision of Bernardo Magnini.",
+      "summary": "Working as a pre-doctoral researcher (\"Researcher 4 contract\") in the <a href=\"https://nlplab.fbk.eu/\">Natural Language Processing Lab</a> under the supervision of Bernardo Magnini.",
       "highlights": [
         "Lead researcher on FBK's side of a joint project on <strong>planning with Vision-Language Models</strong> (with Aalto University), under resubmission.",
         "Led a second project on <strong>selectively integrating VLM guidance with model-free Reinforcement Learning</strong> based on the agent's own uncertainty, with a preliminary version accepted at the CAIPI workshop at ECAI 2025 and a full paper in preparation.",
@@ -33,7 +33,7 @@
       "url": "https://www.aalto.fi/en/department-of-computer-science",
       "startDate": "2024-08-01",
       "endDate": "2024-09-30",
-      "summary": "MSc Thesis worker in the <a href=\\\"https://fcai.fi/fcai-teams#foundation\\\">Foundation Models for Language and Reinforcement Learning</a> (Larel) group, supervised by Prof. Pekka Marttinen.",
+      "summary": "MSc Thesis worker in the <a href=\"https://fcai.fi/fcai-teams#foundation\">Foundation Models for Language and Reinforcement Learning</a> (Larel) group, supervised by Prof. Pekka Marttinen.",
       "highlights": [
         "Conducted a research project on <strong>Symbolic Regression with Large Language Models</strong>, presented at the ACL Student Research Workshop.",
         "Co-led a research project on <strong>Code World Models</strong> with PhD candidate Nicola Dainese, forming the basis of my Master's Thesis, accepted at NeurIPS 2024.",
@@ -64,7 +64,7 @@
       "url": "https://www.aalto.fi/en/study-options/machine-learning-data-science-and-artificial-intelligence-master-of-science-technology",
       "courses": [
         "Graduated with honors, with a <strong>final grade of 5.0/5.0</strong> and a <strong>GPA of 5.0/5.0</strong>.",
-        "<a href=\\\"https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6\\\">Thesis</a>: <strong>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</strong>, supervised by Prof. Pekka Marttinen, published at NeurIPS 2024.",
+        "<a href=\"https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6\">Thesis</a>: <strong>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</strong>, supervised by Prof. Pekka Marttinen, published at NeurIPS 2024.",
         "Thesis awarded as one of the three <strong>best MSc theses of 2024</strong> at the School of Science.",
         "Received the Dean's Scholarship for outstanding academic performance."
       ],
@@ -90,9 +90,7 @@
       "startDate": "2014-09-01",
       "endDate": "2019-07-04",
       "url": "https://liceodavincitn.it",
-      "courses": [
-        "Graduated with a <strong>final grade of 100/100</strong>."
-      ]
+      "courses": ["Graduated with a <strong>final grade of 100/100</strong>."]
     }
   ],
   "publications": [
