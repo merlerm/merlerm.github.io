@@ -64,7 +64,7 @@
       "url": "https://www.aalto.fi/en/study-options/machine-learning-data-science-and-artificial-intelligence-master-of-science-technology",
       "courses": [
         "Graduated with honors, with a <strong>final grade of 5.0/5.0</strong> and a <strong>GPA of 5.0/5.0</strong>.",
-        "Thesis: <a href=\\\"https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6\\\"><strong>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</strong></a>, supervised by Prof. Pekka Marttinen, published at NeurIPS 2024.",
+        "<a href=\\\"https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6\\\">Thesis</a>: <strong>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</strong>, supervised by Prof. Pekka Marttinen, published at NeurIPS 2024.",
         "Thesis awarded as one of the three <strong>best MSc theses of 2024</strong> at the School of Science.",
         "Received the Dean's Scholarship for outstanding academic performance."
       ],
@@ -90,7 +90,9 @@
       "startDate": "2014-09-01",
       "endDate": "2019-07-04",
       "url": "https://liceodavincitn.it",
-      "courses": ["Graduated with a <strong>final grade of 100/100</strong>."]
+      "courses": [
+        "Graduated with a <strong>final grade of 100/100</strong>."
+      ]
     }
   ],
   "publications": [
@@ -106,21 +108,21 @@
       "publisher": "arXiv preprint",
       "releaseDate": "2025-05-19",
       "url": "https://arxiv.org/pdf/2505.13180",
-      "summary": "<strong>Matteo Merler</strong>*, Nicola Dainese*, Minttu Alakuijala, Giovanni Bonetta, Pietro Ferrazzi, Yu Tian, Bernardo Magnini, Pekka Marttinen"
+      "summary": "<strong>Matteo Merler</strong>†, Nicola Dainese†, Minttu Alakuijala, Giovanni Bonetta, Pietro Ferrazzi, Yu Tian, Bernardo Magnini, Pekka Marttinen"
     },
     {
       "name": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
       "publisher": "Advances in Neural Information Processing Systems 37 (NeurIPS 2024)",
       "releaseDate": "2024-12-13",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6f479ea488e0908ac8b1b37b27fd134c-Abstract-Conference.html",
-      "summary": "Nicola Dainese*, <strong>Matteo Merler</strong>*, Minttu Alakuijala, Pekka Marttinen"
+      "summary": "Nicola Dainese†, <strong>Matteo Merler</strong>†, Minttu Alakuijala, Pekka Marttinen"
     },
     {
       "name": "In-Context Symbolic Regression: Leveraging Large Language Models for Function Discovery",
       "publisher": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics, Volume 4: Student Research Workshop (ACL 2024 SRW)",
       "releaseDate": "2024-08-01",
       "url": "https://aclanthology.org/2024.acl-srw.49/",
-      "summary": "<strong>Matteo Merler</strong>*, Katsiaryna Haitsiukevich*, Nicola Dainese*, Pekka Marttinen"
+      "summary": "<strong>Matteo Merler</strong>†, Katsiaryna Haitsiukevich†, Nicola Dainese†, Pekka Marttinen"
     }
   ],
   "volunteer": [
@@ -144,7 +146,7 @@
   "awards": [
     {
       "title": "Master's Thesis Award",
-      "summary": "My Master's thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
+      "summary": "My Master's Thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
       "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
       "date": "2025-04-03",
       "awarder": "Aalto University, School of Science"

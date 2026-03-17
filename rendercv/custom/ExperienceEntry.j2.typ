@@ -1,40 +1,28 @@
-((* if date_and_location_column_template *))
-#two-col-entry(
-  left-content: [
-  #strong[<<entry.position>>], #block([#set text(hyphenate: false)
-  ((* if entry.link *)) #box(link("<<entry.link>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)) -- <<entry.location>>
-  ])
-    ((* if design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv" *))
-    ((* if main_column_second_row_template *))
-    #v(-design-text-leading)
-    ((* endif *))
+{% if not design.entries.short_second_row %}
+{% set first_row_lines = entry.date_and_location_column.splitlines()|length %}
+{% if first_row_lines == 0 %} {% set first_row_lines = 1 %} {% endif %}
+{% else %}
+{% set first_row_lines = entry.main_column.splitlines()|length %}
+{% endif %}
+#regular-entry(
+  [
+{% for line in entry.main_column.splitlines()[:first_row_lines] %}
+    {{ line|indent(4) }}
 
-    <<main_column_second_row_template|replace("\n\n", "\n\n#v(-design-text-leading)")>>
-    ((* endif *))
+{% endfor %}
   ],
-  right-content: [
-    <<date_and_location_column_template>>
-  ],
-)
-  ((* if not (design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv") *))
-#one-col-entry(
-  content: [
-    <<main_column_second_row_template|replace("\n\n", "\n\n#v(-design-text-leading)")>>
-  ],
-)
-((* endif *))
-((* else *))
+  [
+{% for line in entry.date_and_location_column.splitlines() %}
+    {{ line|indent(4) }}
 
-#one-col-entry(
-  content: [
-  #strong[<<entry.position>>], #block([#set text(hyphenate: false)
-  ((* if entry.link *)) #box(link("<<entry.link>>")[<<entry.company>>]) ((* else *)) <<entry.company>> ((* endif *)) -- <<entry.location>>
-  ])
-
-    ((* if main_column_second_row_template *))
-    #v(-design-text-leading)
-    ((* endif *))
-    <<main_column_second_row_template|replace("\n\n", "\n\n#v(-design-text-leading)")>>
+{% endfor %}
   ],
+{% if not design.entries.short_second_row %}
+  main-column-second-row: [
+{% for line in entry.main_column.splitlines()[first_row_lines:] %}
+    {{ line|indent(4) }}
+
+{% endfor %}
+  ],
+{% endif %}
 )
-((* endif *))

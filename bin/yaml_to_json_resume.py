@@ -26,6 +26,21 @@ def convert(yaml_data: dict) -> dict:
     cv = yaml_data.get("cv", {})
     out = {}
 
+    def strip_md_link(s):
+        """Extract plain text from markdown link: [text](url) -> text"""
+        if not s:
+            return s
+        m = re.match(r"^\[([^\]]+)\]\(([^)]+)\)$", s.strip())
+        if m:
+            return m.group(1)
+        return s
+
+    def strip_md_italic(s):
+        """Strip markdown italic markers: _text_ -> text"""
+        if not s:
+            return s
+        return re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"\1", s)
+
     def md_to_html(s):
         """Convert minimal markdown (bold, links) to HTML.
 
@@ -78,7 +93,7 @@ def convert(yaml_data: dict) -> dict:
     out["work"] = []
     for e in sections.get("experience", []) or []:
         it = {}
-        it["name"] = e.get("company")
+        it["name"] = strip_md_link(e.get("company"))
         it["position"] = e.get("position")
         it["location"] = e.get("location")
         it["url"] = e.get("link")
@@ -93,7 +108,7 @@ def convert(yaml_data: dict) -> dict:
     out["education"] = []
     for ed in sections.get("education", []) or []:
         it = {}
-        it["institution"] = ed.get("institution")
+        it["institution"] = strip_md_link(ed.get("institution"))
         it["area"] = ed.get("area")
         it["studyType"] = ed.get("degree")
         it["startDate"] = ed.get("start_date")
@@ -111,10 +126,13 @@ def convert(yaml_data: dict) -> dict:
     out["publications"] = []
     for p in sections.get("publications", []) or []:
         it = {}
-        it["name"] = p.get("title") or p.get("name")
-        it["publisher"] = p.get("journal")
+        raw_title = p.get("title") or p.get("name")
+        # Extract URL from markdown link in title if present
+        title_link = re.match(r"^\[([^\]]+)\]\(([^)]+)\)$", (raw_title or "").strip())
+        it["name"] = title_link.group(1) if title_link else raw_title
+        it["publisher"] = strip_md_italic(p.get("journal"))
         it["releaseDate"] = p.get("date")
-        it["url"] = p.get("link")
+        it["url"] = (title_link.group(2) if title_link else None) or p.get("url") or p.get("link")
         # authors -> summary or keep as list under summary
         if p.get("authors"):
             if isinstance(p.get("authors"), list):
@@ -134,7 +152,7 @@ def convert(yaml_data: dict) -> dict:
     out["volunteer"] = []
     for v in sections.get("volunteer", []) or []:
         it = {}
-        it["organization"] = v.get("company") or v.get("organization")
+        it["organization"] = strip_md_link(v.get("company") or v.get("organization"))
         it["position"] = v.get("position")
         it["url"] = v.get("link")
         it["startDate"] = v.get("start_date")
@@ -146,22 +164,22 @@ def convert(yaml_data: dict) -> dict:
     out["awards"] = []
     for a in sections.get("additional_experience_and_awards", []) or []:
         it = {}
-        it["title"] = a.get("label")
+        it["title"] = strip_md_link(a.get("label"))
         it["summary"] = md_to_html(a.get("details")) if a.get("details") else a.get("details")
         it["url"] = a.get("link")
         it["date"] = a.get("date")
         it["awarder"] = a.get("awarder")
         out["awards"].append(it)
 
-    # languages: support both dict objects and label/details
+    # languages: support dict objects, label/details, or inline "**Lang:** Fluency | ..." strings
+    # certificate files for languages (can't store in YAML sections without rendercv validation errors)
+    cert_map = {"English": "english_matteo_merler.pdf"}
     out["languages"] = []
     for l in sections.get("languages", []) or []:
         if isinstance(l, dict):
-            # try to be accommodating
             name = l.get("language") or l.get("label")
             fluency = l.get("fluency") or l.get("details")
             lang = {"language": name, "fluency": fluency}
-            # normalize language strings
             if isinstance(lang.get("language"), str):
                 lang["language"] = md_to_html(lang.get("language"))
             if isinstance(lang.get("fluency"), str):
@@ -169,8 +187,21 @@ def convert(yaml_data: dict) -> dict:
             if l.get("certificate_file"):
                 lang["certificate_file"] = l.get("certificate_file")
             out["languages"].append(lang)
+        elif isinstance(l, str) and "|" in l:
+            # inline format: "**Italian:** Native | **English:** C2 (...) | ..."
+            for part in l.split("|"):
+                part = part.strip()
+                # strip markdown bold markers
+                part = re.sub(r"\*\*(.+?)\*\*", r"\1", part)
+                if ":" in part:
+                    name, fluency = part.split(":", 1)
+                    lang = {"language": name.strip(), "fluency": fluency.strip()}
+                    if name.strip() in cert_map:
+                        lang["certificate_file"] = cert_map[name.strip()]
+                    out["languages"].append(lang)
+                else:
+                    out["languages"].append({"language": part, "fluency": ""})
         else:
-            # fallback: string such as "**Italian**: Native"
             out["languages"].append({"language": l, "fluency": ""})
 
     # certificates (pass-through if present)
