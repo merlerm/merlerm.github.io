@@ -1,53 +1,28 @@
-((* if date_and_location_column_template *))
-#two-col-entry(
-  left-content: [
-    ((* if entry.link or entry.url or entry.doi *))
-      #box(link("<<entry.link or entry.url or entry.doi>>")[<< main_column_first_row_template >>])
-    ((* else *))
-      <<main_column_first_row_template>>
-    ((* endif *))
+{% if not design.entries.short_second_row %}
+{% set first_row_lines = entry.date_and_location_column.splitlines()|length %}
+{% if first_row_lines == 0 %} {% set first_row_lines = 1 %} {% endif %}
+{% else %}
+{% set first_row_lines = entry.main_column.splitlines()|length %}
+{% endif %}
+#regular-entry(
+  [
+{% for line in entry.main_column.splitlines()[:first_row_lines] %}
+    {{ line|indent(4) }}
 
-  ((* if design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv" *))
-  #v(-design-text-leading)
-    ((* if not (entry.doi or entry.url)*))
-  <<main_column_second_row_without_url_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- elif not entry.journal -*))
-  <<main_column_second_row_without_journal_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- else -*))
-  <<main_column_second_row_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- endif -*))
-  ((* endif *))
+{% endfor %}
   ],
-  right-content: [
-    <<date_and_location_column_template>>
+  [
+{% for line in entry.date_and_location_column.splitlines() %}
+    {{ line|indent(4) }}
+
+{% endfor %}
   ],
+{% if not design.entries.short_second_row %}
+  main-column-second-row: [
+{% for line in entry.main_column.splitlines()[first_row_lines:] %}
+    {{ line|indent(4) }}
+
+{% endfor %}
+  ],
+{% endif %}
 )
-  ((* if not (design.entries.short_second_row or date_and_location_column_template.count("\n\n") > main_column_first_row_template.count("\n\n") or design.section_titles.type=="moderncv") *))
-#one-col-entry(content:[
-    ((* if not (entry.doi or entry.url)*))
-  <<main_column_second_row_without_url_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- elif not entry.journal -*))
-  <<main_column_second_row_without_journal_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- else -*))
-  <<main_column_second_row_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- endif -*))
-])
-  ((* endif *))
-((* else *))
-#one-col-entry(content:[
-  ((* if entry.link or entry.url or entry.doi *))
-      #box(link("<<entry.link or entry.url or entry.doi>>")[<< main_column_first_row_template >>])
-  ((* else *))
-    <<main_column_first_row_template>>
-  ((* endif *))
-
-  #v(-design-text-leading)
-    ((* if not (entry.doi or entry.url)*))
-  <<main_column_second_row_without_url_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- elif not entry.journal -*))
-  <<main_column_second_row_without_journal_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- else -*))
-  <<main_column_second_row_template|replace("\n\n", "\n\n#v(design-highlights-top-margin - design-text-leading)")>>
-    ((*- endif -*))
-])
-((* endif *))
