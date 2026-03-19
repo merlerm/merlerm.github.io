@@ -375,12 +375,27 @@ ul.task-list input[type="checkbox"] {
   -webkit-backdrop-filter: blur(16px);
   background-color: color-mix(in srgb, var(--global-bg-color) 85%, transparent);
   opacity: 1;
-  height: 72px;
   min-height: 72px;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
   align-items: center;
+
+  // On mobile: fix the upward shift when menu opens & use solid background
+  @media (max-width: 575.98px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background-color: color-mix(in srgb, var(--global-bg-color) 95%, transparent);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--global-divider-color);
+      padding: 8px 16px;
+      z-index: 1000;
+    }
+  }
 }
 
 .navbar .dropdown-menu {
@@ -571,8 +586,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform: translateY(6px) rotate(45deg);
   }
 
   .middle-bar {
@@ -580,8 +594,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
@@ -1458,7 +1471,7 @@ progress {
   /* Positioning */
   position: fixed;
   left: 0;
-  top: 56px;
+  top: 72px;
   z-index: 10;
 
   /* Dimensions */
@@ -1496,7 +1509,7 @@ progress::-moz-progress-bar {
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 56px;
+  top: 72px;
   left: 0;
   height: 5px;
   display: block;
@@ -2485,6 +2498,10 @@ figure.cover {
     .nav-accent-bar {
       height: 16px;
     }
+  }
+
+  .navbar .navbar-collapse {
+    padding: 8px 0;
   }
 
   .about-grid {
