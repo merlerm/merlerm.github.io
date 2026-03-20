@@ -456,26 +456,28 @@ ul.task-list input[type="checkbox"] {
       display: inline-block;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 13px;
-      right: 0;
-      height: 1.5px;
-      background: var(--global-theme-color);
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.35s ease;
+    @media (min-width: 576px) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 13px;
+        right: 0;
+        height: 1.5px;
+        background: var(--global-theme-color);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.35s ease;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
     }
 
     &:hover {
       color: var(--global-theme-color);
-    }
-
-    &:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
     }
   }
 
@@ -491,26 +493,28 @@ ul.task-list input[type="checkbox"] {
     position: relative;
     white-space: nowrap;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      left: 12px;
-      right: 12px;
-      height: 1.5px;
-      background: var(--global-theme-color);
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.35s ease;
+    @media (min-width: 576px) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 12px;
+        right: 12px;
+        height: 1.5px;
+        background: var(--global-theme-color);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.35s ease;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
     }
 
     &:hover {
       color: var(--global-theme-color);
-
-      &::before {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
     }
   }
 
