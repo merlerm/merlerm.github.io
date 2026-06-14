@@ -221,11 +221,34 @@
     function gtag() {
       dataLayer.push(arguments);
     }
+    {% if site.enable_cookie_banner %}
+      // Consent Mode v2: deny storage by default, then honour a previously saved choice.
+      // The cookie banner (assets/js/cookie-consent.js) flips this to "granted" on opt-in.
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
+      if (window.localStorage && localStorage.getItem('cookie-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    {% endif %}
     gtag('js', new Date());
 
     gtag('config', '{{ site.google_analytics }}');
   </script>
   <script defer src="{{ '/assets/js/google-analytics-setup.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
+{% if site.enable_goatcounter_analytics %}
+  <!-- GoatCounter (privacy-first, cookieless) -->
+  <script
+    data-goatcounter="https://{{ site.goatcounter_analytics }}.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
 {% endif %}
 
 {% if site.enable_cronitor_analytics %}

@@ -1,0 +1,16 @@
+<!-- Cookie consent banner — only rendered when Google Analytics + the banner are enabled. -->
+{% if site.enable_google_analytics and site.enable_cookie_banner %}
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+    <p class="cookie-banner-text">
+      This site uses Google Analytics cookies to understand how the site is used. Analytics stays off until you accept.
+      {% if site.privacy_policy_url %}
+        <a href="{{ site.privacy_policy_url }}">Learn more</a>.
+      {% endif %}
+    </p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="cookie-btn cookie-btn-decline" data-consent="denied">Decline</button>
+      <button type="button" class="cookie-btn cookie-btn-accept" data-consent="granted">Accept</button>
+    </div>
+  </div>
+  <script defer src="{{ '/assets/js/cookie-consent.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}

@@ -1,0 +1,103 @@
+/*******************************************************************************
+ * Cookie consent banner (shown only with Google Analytics + enable_cookie_banner)
+ ******************************************************************************/
+
+.cookie-banner {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 1080; // above navbar (1030) and back-to-top
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  width: calc(100% - 2rem);
+  max-width: 760px;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid var(--global-border-light);
+  border-radius: 10px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  box-shadow: var(--global-shadow-md);
+
+  // entrance animation (toggled by cookie-consent.js)
+  transform: translate(-50%, calc(100% + 1.5rem));
+  opacity: 0;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+
+  &.cookie-banner-visible {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  .cookie-banner-text {
+    flex: 1 1 320px;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+
+    a {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .cookie-banner-actions {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+
+  .cookie-btn {
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .cookie-btn-decline {
+    border: 1px solid var(--global-border-light);
+    background-color: transparent;
+    color: var(--global-text-color);
+
+    &:hover {
+      border-color: var(--global-text-color);
+    }
+  }
+
+  .cookie-btn-accept {
+    border: 1px solid var(--global-theme-color);
+    background-color: var(--global-theme-color);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--global-hover-color);
+      border-color: var(--global-hover-color);
+      color: var(--global-hover-text-color);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .cookie-banner {
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+
+    .cookie-banner-actions {
+      width: 100%;
+
+      .cookie-btn {
+        flex: 1 1 0;
+      }
+    }
+  }
+}
