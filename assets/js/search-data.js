@@ -63,6 +63,9 @@ ninja.data = [{
           section: "News",},{id: "news-a-preliminary-version-of-our-latest-work-guiding-reinforcement-learning-with-selective-vision-language-model-supervision-has-been-published-in-the-ecai-2025-caipi-workshop-we-are-currently-extending-this-work-into-a-full-length-paper-for-a-conference-submission",
           title: 'A preliminary version of our latest work, Guiding Reinforcement Learning with Selective Vision-Language...',
           description: "",
+          section: "News",},{id: "news-we-released-a-new-preprint-decselfmask-leveraging-unlabeled-text-via-self-relevance-guided-masking-for-decoder-only-classification-led-by-pietro-ferrazzi",
+          title: 'We released a new preprint: DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
