@@ -15,7 +15,9 @@ cv:
   photo: "../assets/img/profile_picture.jpg"
   sections:
     summary:
-      - "I am a pre-doctoral researcher at FBK NLP in Trento, Italy, with an MSc in Machine Learning, Data Science, and AI from Aalto University in Helsinki. My research focuses on **bridging large-scale models** (such as LLMs and VLMs) **with methods like Reinforcement Learning (RL) and Symbolic Planning**. I aim to explore how RL's ability to learn from experience can complement the strengths of LLMs, which currently lack this capacity. I'm particularly interested in **model-based RL and world models**, investigating how large-scale models can be trained to plan ahead and imagine future states, helping them to adapt to complex reasoning and long-horizon planning beyond pattern matching."
+      # AUTO-GENERATED from _pages/about.md by bin/about_to_summary.py -- do not edit by hand.
+      - "I am a researcher at the FBK NLP in Trento, Italy. This Fall, I will start my PhD at the Bethge Lab in Tübingen, Germany, as an ELLIS PhD Student and as part of the International Max Planck Research School for Intelligent Systems (IMPRS-IS). I also work with Tom Silver's group for robotics and planning in Princeton, US. Previously, I obtained my MSc degree in Machine Learning, Data Science and Artificial Intelligence from Aalto University in Helsinki, Finland."
+      - "I am interested in developing autonomous AI agents that learn from experience and adapt dynamically to new situations. For this, my research is at the intersection of large-scale vision and language models, reinforcement learning, and planning. In particular, I believe world modeling to be a key component for building intelligent agents that can reason about the world and plan their actions accordingly. I work with both simulated games and real-world robotics as environments for agents to learn and adapt in. I am also curious about the connections between AI and cognitive science, and how insights from human cognition can inform the development of more intelligent agents."
     education:
       - institution: "[Aalto University](https://www.aalto.fi/en/study-options/machine-learning-data-science-and-artificial-intelligence-master-of-science-technology)"
         area: "Machine Learning, Data Science and Artificial Intelligence"
@@ -84,6 +86,17 @@ cv:
         highlights:
           - "Designed and built a prototype for an indoor navigation system specifically targeted for supermarkets, to be used with the company's own location tracking system."
     publications:
+      # AUTO-GENERATED from _bibliography/papers.bib by bin/bib_to_publications.py -- do not edit by hand.
+      - title: "[DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification](https://arxiv.org/pdf/2606.09466)"
+        date: "2026-06-01"
+        authors:
+          - "Pietro Ferrazzi"
+          - "**Matteo Merler**"
+          - "Giovanni Bonetta"
+          - "Alberto Lavelli"
+          - "Bernardo Magnini"
+        journal: "_arXiv preprint_"
+        url: "https://arxiv.org/pdf/2606.09466"
       - title: "[Guiding Reinforcement Learning with Selective Vision-Language Model Supervision](https://ceur-ws.org/Vol-4103/paper4.pdf)"
         date: "2025-10-25"
         authors:

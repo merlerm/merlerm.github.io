@@ -83,10 +83,15 @@ def convert(yaml_data: dict) -> dict:
     basics["url"] = cv.get("website")
     # put the location string into a simple object for compatibility
     basics["location"] = {"city": cv.get("location", "")}
-    # summary is stored under sections.summary as a list of paragraphs
+    # summary is stored under sections.summary as a list of paragraphs. The website CV
+    # page renders basics.summary as raw HTML in a table cell, so join paragraphs with
+    # <br><br> to keep them visually separate (a plain "\n\n" collapses to one block).
     sections = cv.get("sections", {})
     summary_list = sections.get("summary") or []
-    basics["summary"] = md_to_html("\n\n".join(summary_list)) if isinstance(summary_list, list) else md_to_html(summary_list or "")
+    if isinstance(summary_list, list):
+        basics["summary"] = "<br><br>".join(md_to_html(p) for p in summary_list)
+    else:
+        basics["summary"] = md_to_html(summary_list or "")
     out["basics"] = basics
 
     # work / experience

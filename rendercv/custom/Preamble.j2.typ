@@ -85,8 +85,12 @@
   ),
 )
 
-// Use optimized line-breaking (Knuth-Plass style) and enforce justified text:
-#set par(linebreaks: "optimized", justify: true)
+// Use optimized line-breaking (Knuth-Plass style) and enforce justified text.
+// spacing: 0.8em gives a visible gap between stacked top-level paragraphs (the multi-
+// paragraph Summary synced from about.md); the rendercv lib defaults this to 0cm, which
+// makes the summary paragraphs overlap. Regular entries set their own par spacing locally,
+// so this only affects the Summary section.
+#set par(linebreaks: "optimized", justify: true, spacing: 0.8em)
 
 // Prevent orphaned section titles and entry headers at page bottom:
 #show heading: it => block(below: 0.3cm, sticky: true, it)

@@ -30,12 +30,28 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Sync publications from papers.bib into resume.yaml
+        run: |
+          python3 bin/bib_to_publications.py \
+            --bib _bibliography/papers.bib \
+            --resume rendercv/resume.yaml
+
+      - name: Sync CV summary from about.md into resume.yaml
+        run: |
+          python3 bin/about_to_summary.py \
+            --about _pages/about.md \
+            --resume rendercv/resume.yaml
+
       - name: Run RenderCV to build PDF
         run: |
           echo "Running rendercv..."
           rendercv render rendercv/resume.yaml \
             --pdf-path assets/pdf/CV_matteo_merler.pdf \
             --dont-generate-markdown --dont-generate-html --dont-generate-png
+          # rendercv resolves --pdf-path relative to the YAML's directory, so the PDF
+          # is written to rendercv/assets/pdf/. Copy it to the path the website serves
+          # (al-folio's cv_pdf: in _pages/cv.md -> assets/pdf/CV_matteo_merler.pdf).
+          cp rendercv/assets/pdf/CV_matteo_merler.pdf assets/pdf/CV_matteo_merler.pdf
 
       - name: Convert YAML -> JSON
         run: |

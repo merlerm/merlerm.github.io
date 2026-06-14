@@ -1,3 +1,4 @@
 nbconvert
 rendercv[full]==2.7
 pyyaml
+bibtexparser==1.4.4
