@@ -3,6 +3,25 @@
 
 @string{aps = {American Physical Society,}}
 
+@misc{ferrazzi2026decselfmask,
+  bibtex_show   = {true},
+  title         = {DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification},
+  author        = {Ferrazzi, Pietro and Merler, Matteo and Bonetta, Giovanni and Lavelli, Alberto and Magnini, Bernardo},
+  year          = {2026},
+  month         = {June},
+  eprint        = {2606.09466},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2606.09466},
+  abstract      = {Classification tasks require annotated data, which can often be expensive, time-consuming, or even unfeasible to collect. This is the case of the medical domain, where large datasets often have few annotated examples. To address this, we propose DecSelfMask (Decoder Self-learning by Masking), an approach to enhance decoder-only performance on classification tasks. We build on common self-learning approaches by leveraging a model to create training examples from unlabeled data to propose a novel relevance-guided masking strategy. We use relevance attribution methods to determine what portions of unannotated texts are relevant for a task. We then create self-supervised training examples by masking out those portions, training the model to reconstruct them via next-token-prediction. We hypothesize that those examples convey knowledge about the structure and semantics of unannotated data that can be useful for downstream performance. We test our approach on 136 tasks from a collection of 1.9M clinical notes from an Italian hospital. We quantify DecSelfMask's impact on downstream tasks on 5 models of different scales and families, including a probing analysis. Experiments show consistent gains, outperforming standard supervised fine-tuning approaches (+19.9 points in Macro F1), synthetic label generation (+12.5), and continual pretraining (+6.3), as well as common baselines.},
+  preview       = {decselfmask.png},
+  selected      = {false},
+  abbr          = {arXiv},
+  html          = {https://arxiv.org/abs/2606.09466},
+  pdf           = {papers/ferrazzi2026decselfmask.pdf},
+  google_scholar_id = {roLk4NBRz8UC}
+}
+
 @inproceedings{merler2025guiding,
   bibtex_show = {true},
   title       = {Guiding Reinforcement Learning with Selective Vision-Language Model Supervision},
@@ -22,7 +41,7 @@
   abbr        = {ECAI},
   google_scholar_id = {zYLM7Y9cAGgC}
 }
-@misc{merler2025viplanbenchmarkvisualplanning,
+@misc{merler2025viplan,
   bibtex_show   = {true},
   title         = {ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models},
   author        = {Matteo Merler* and Nicola Dainese* and Minttu Alakuijala and Giovanni Bonetta and Pietro Ferrazzi and Yu Tian and Bernardo Magnini and Pekka Marttinen},

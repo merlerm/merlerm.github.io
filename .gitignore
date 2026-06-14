@@ -16,3 +16,4 @@ vendor
 settings.json
 *.pyc
 rendercv_output/
+_mockups/
