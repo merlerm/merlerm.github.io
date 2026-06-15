@@ -426,7 +426,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: true # enables google analytics
+enable_google_analytics: false # enables google analytics
 enable_cookie_banner: true # show a GDPR cookie-consent banner; gates Google Analytics until the visitor opts in (Consent Mode v2)
 enable_goatcounter_analytics: true # enables GoatCounter (privacy-first, cookieless, no banner needed)
 enable_cronitor_analytics: false # enables cronitor RUM analytics

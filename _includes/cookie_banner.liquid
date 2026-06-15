@@ -1,5 +1,5 @@
-<!-- Cookie consent banner — only rendered when Google Analytics + the banner are enabled. -->
-{% if site.enable_google_analytics and site.enable_cookie_banner %}
+<!-- Cookie consent banner — only rendered when Google Analytics is actually active (enabled + ID set) and the banner is enabled. -->
+{% if site.enable_google_analytics and site.google_analytics and site.google_analytics != "" and site.enable_cookie_banner %}
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
     <p class="cookie-banner-text">
       This site uses Google Analytics cookies to understand how the site is used. Analytics stays off until you accept.
