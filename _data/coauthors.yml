@@ -33,3 +33,23 @@
 "lavelli":
   - firstname: ["Alberto"]
     url: https://scholar.google.com/citations?user=Aq7t-gmq1Y0C
+
+"hernandez-gutierrez":
+  - firstname: ["Sergio"]
+    url: https://sergiohg.com
+
+"auzina":
+  - firstname: ["Ilze Amanda"]
+    url: https://ilzeamandaa.github.io
+
+"struber":
+  - firstname: ["Joschka"]
+    url: https://scholar.google.com/citations?user=-arSHMAAAAAJ
+
+"prabhu":
+  - firstname: ["Ameya"]
+    url: https://ameya.prabhu.be
+
+"bethge":
+  - firstname: ["Matthias"]
+    url: https://bethgelab.org
