@@ -66,6 +66,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-released-a-new-preprint-decselfmask-leveraging-unlabeled-text-via-self-relevance-guided-masking-for-decoder-only-classification-led-by-pietro-ferrazzi",
           title: 'We released a new preprint: DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for...',
           description: "",
+          section: "News",},{id: "news-we-released-a-new-preprint-qval-cheaply-evaluating-dense-supervision-signals-for-long-horizon-llm-agents-led-by-sergio-hernández",
+          title: 'We released a new preprint: QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
