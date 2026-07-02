@@ -95,6 +95,13 @@
   ],
   "publications": [
     {
+      "name": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-06-01",
+      "url": "https://arxiv.org/pdf/2606.32034",
+      "summary": "Sergio Hernández-Gutiérrez, <strong>Matteo Merler</strong>†, Ilze Amanda Auzina†, Joschka Strüber, Ameya Prabhu, Matthias Bethge"
+    },
+    {
       "name": "DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification",
       "publisher": "arXiv preprint",
       "releaseDate": "2026-06-01",
