@@ -29,6 +29,13 @@ permalink: /contact/
         <div class="card-value">linkedin.com/in/merlerm</div>
       </a>
     </div>
+    <div class="contact-card">
+      <a href="https://x.com/merler_m">
+        <i class="fa-brands fa-x-twitter"></i>
+        <div class="card-label">X</div>
+        <div class="card-value">x.com/merler_m</div>
+      </a>
+    </div>
   </div>
 
   <p>
