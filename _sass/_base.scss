@@ -158,6 +158,37 @@ table.table a {
   }
 }
 
+// Global sliding underline for prose links in page/post content.
+// Any page/post rendered in `.post` gets this automatically — no per-page wrapper needed.
+// Uses a background-gradient underline (not a scaleX `::before`): the gradient is painted
+// onto each line fragment, so it survives line wraps on multi-line links — the absolutely
+// positioned `::before` can only underline a single rectangle and breaks when a link wraps.
+// The `::before { display: none }` guard also neutralizes the older scaleX underline that
+// some sections (.bio, .contact-content) still declare, so links there don't get a doubled line.
+.post {
+  p,
+  li,
+  blockquote {
+    a:not(.btn):not(.btncv):not(.pub-link):not([class*="card"]):not([class*="badge"]):not(.news-title) {
+      text-decoration: none;
+      background-image: linear-gradient(var(--global-theme-color), var(--global-theme-color));
+      background-size: 0% 1px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 1px;
+      transition: background-size 0.4s ease;
+
+      &::before {
+        display: none !important;
+      }
+
+      &:hover {
+        background-size: 100% 1px;
+      }
+    }
+  }
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
