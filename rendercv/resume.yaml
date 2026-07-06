@@ -87,6 +87,17 @@ cv:
           - "Designed and built a prototype for an indoor navigation system specifically targeted for supermarkets, to be used with the company's own location tracking system."
     publications:
       # AUTO-GENERATED from _bibliography/papers.bib by bin/bib_to_publications.py -- do not edit by hand.
+      - title: "[QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](https://arxiv.org/pdf/2606.32034)"
+        date: "2026-06-01"
+        authors:
+          - "Sergio Hernández-Gutiérrez"
+          - "**Matteo Merler**†"
+          - "Ilze Amanda Auzina†"
+          - "Joschka Strüber"
+          - "Ameya Prabhu"
+          - "Matthias Bethge"
+        journal: "_arXiv preprint_"
+        url: "https://arxiv.org/pdf/2606.32034"
       - title: "[DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification](https://arxiv.org/pdf/2606.09466)"
         date: "2026-06-01"
         authors:
