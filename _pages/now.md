@@ -25,7 +25,7 @@ the ARR May cycle last week.
 I am currently reading [The Laws of Thought](https://www.goodreads.com/book/show/231127455-the-laws-of-thought)
 by another Princeton Tom, Tom Griffiths. There is also an excellent podcast, [The Cognition Project](https://open.spotify.com/show/7rhwBGhEQCtO9cBguazFsq),
 which documents all the interviews that Tom has done with cognitive scientists and AI researchers for the book.
-I am also playing through [Return of the Obra Dinn]([https://store.nintendo.com/it-it/the-legend-of-zelda-links-awakening-000000000010002092](https://obradinn.com)) on the Switch,
+I am also playing through [Return of the Obra Dinn](<[https://store.nintendo.com/it-it/the-legend-of-zelda-links-awakening-000000000010002092](https://obradinn.com)>) on the Switch,
 which I'm finding to be a very interesting game, although I need to spend more time with it and think about it more carefully, which I'm struggling to find the time to do among rebuttals.
 Perhaps some day when I find some more free time I will get around to setting up a page on the website to share my favorite books and games.
 
