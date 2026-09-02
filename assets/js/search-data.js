@@ -76,6 +76,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-released-a-new-preprint-qval-cheaply-evaluating-dense-supervision-signals-for-long-horizon-llm-agents-led-by-sergio-hernández",
           title: 'We released a new preprint: QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon...',
           description: "",
+          section: "News",},{id: "news-three-papers-accepted-to-emnlp-2026-decselfmask-as-a-main-conference-paper-viplan-and-sage-as-findings-papers-congratulations-to-all-the-authors",
+          title: 'Three papers accepted to EMNLP 2026! DecSelfMask as a main conference paper, ViPlan...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
