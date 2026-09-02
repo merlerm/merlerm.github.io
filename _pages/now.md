@@ -34,4 +34,4 @@ This week, I have also been re-playing [A Short Hike](https://ashorthike.com/), 
 
 Perhaps some day when I find some more free time I will get around to setting up a page on the website to share my favorite books and games.
 
-I'm also excited to watch the Sixers next year, now that we got LeBron! Very unexpected turn of events after last season. Italian basketball is also starting soon, I am excited to see what my home team, Aquila Basket Trento, will do this year. I am also looking forward to the next FIBA World Cup, which will be held in Indonesia, Japan and the Philippines. I hope Italy will do well, and I am excited to see how the new generation of players will perform.
+I'm also excited to watch the Sixers next year, now that we got LeBron! Very unexpected turn of events after last season. Italian basketball is also starting soon, I am excited to see what my home team, Aquila Basket Trento, will do this year.
