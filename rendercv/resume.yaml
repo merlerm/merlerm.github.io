@@ -17,7 +17,8 @@ cv:
     summary:
       # AUTO-GENERATED from _pages/about.md by bin/about_to_summary.py -- do not edit by hand.
       - "I am a researcher at the FBK NLP in Trento, Italy. This Fall, I will start my PhD at the Bethge Lab in Tübingen, Germany, as an ELLIS PhD Student and as part of the International Max Planck Research School for Intelligent Systems (IMPRS-IS). I also work with Tom Silver's group for robotics and planning in Princeton, US. Previously, I obtained my MSc degree in Machine Learning, Data Science and Artificial Intelligence from Aalto University in Helsinki, Finland."
-      - "I am interested in developing autonomous AI agents that learn from experience and adapt dynamically to new situations. For this, my research is at the intersection of large-scale vision and language models, reinforcement learning, and planning. In particular, I believe world modeling to be a key component for building intelligent agents that can reason about the world and plan their actions accordingly. I work with both simulated games and real-world robotics as environments for agents to learn and adapt in. I am also curious about the connections between AI and cognitive science, and how insights from human cognition can inform the development of more intelligent agents."
+      - "I want to build autonomous AI agents that learn from experience and adapt quickly to novel situations. I am interested in how agents turn prior knowledge and experience into effective behavior, and what they do when their existing knowledge or strategies are no longer sufficient."
+      - "My recent work explores executable world models and policies: using language models to construct programs that can be tested, revised, and reused to plan and act. I am particularly interested in how agents recognize the limits of these solutions, recover from unexpected situations, and retain what they learn. I work with both simulated games and real-world robotics as environments for agents to learn and adapt in. I am also curious about the connections between AI and cognitive science, and how insights from human cognition can inform the development of more intelligent agents."
       - "You can also see what I am up to right now."
     education:
       - institution: "[Aalto University](https://www.aalto.fi/en/study-options/machine-learning-data-science-and-artificial-intelligence-master-of-science-technology)"
@@ -88,6 +89,17 @@ cv:
           - "Designed and built a prototype for an indoor navigation system specifically targeted for supermarkets, to be used with the company's own location tracking system."
     publications:
       # AUTO-GENERATED from _bibliography/papers.bib by bin/bib_to_publications.py -- do not edit by hand.
+      - title: "[QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](https://arxiv.org/pdf/2606.32034)"
+        date: "2026-12-06"
+        authors:
+          - "Sergio Hernández-Gutiérrez"
+          - "**Matteo Merler**†"
+          - "Ilze Amanda Auzina†"
+          - "Joschka Strüber"
+          - "Ameya Prabhu"
+          - "Matthias Bethge"
+        journal: "_Advances in Neural Information Processing Systems 39 (NeurIPS 2026), Evaluations and Datasets Track_"
+        url: "https://arxiv.org/pdf/2606.32034"
       - title: "[Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers](https://arxiv.org/pdf/2609.01567)"
         date: "2026-10-24"
         authors:
@@ -121,17 +133,18 @@ cv:
           - "Pekka Marttinen"
         journal: "_Findings of the Association for Computational Linguistics: EMNLP 2026_"
         url: "https://arxiv.org/pdf/2505.13180"
-      - title: "[QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](https://arxiv.org/pdf/2606.32034)"
-        date: "2026-06-01"
+      - title: "[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/pdf/2609.30233)"
+        date: "2026-09-24"
         authors:
-          - "Sergio Hernández-Gutiérrez"
-          - "**Matteo Merler**†"
-          - "Ilze Amanda Auzina†"
-          - "Joschka Strüber"
-          - "Ameya Prabhu"
-          - "Matthias Bethge"
+          - "**Matteo Merler**"
+          - "Bowen Li"
+          - "Josh Roy"
+          - "Yichao Liang"
+          - "Qianwei Wang"
+          - "Yixuan Huang"
+          - "Tom Silver"
         journal: "_arXiv preprint_"
-        url: "https://arxiv.org/pdf/2606.32034"
+        url: "https://arxiv.org/pdf/2609.30233"
       - title: "[Guiding Reinforcement Learning with Selective Vision-Language Model Supervision](https://ceur-ws.org/Vol-4103/paper4.pdf)"
         date: "2025-10-25"
         authors:

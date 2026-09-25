@@ -79,6 +79,12 @@ ninja.data = [{
           section: "News",},{id: "news-three-papers-accepted-to-emnlp-2026-decselfmask-as-a-main-conference-paper-viplan-and-sage-as-findings-papers-congratulations-to-all-the-authors",
           title: 'Three papers accepted to EMNLP 2026! DecSelfMask as a main conference paper, ViPlan...',
           description: "",
+          section: "News",},{id: "news-qval-was-accepted-to-the-neurips-2026-evaluations-and-datasets-track-as-a-poster-congratulations-to-sergio-and-all-the-authors",
+          title: 'QVal was accepted to the NeurIPS 2026 Evaluations and Datasets Track as a...',
+          description: "",
+          section: "News",},{id: "news-we-released-a-new-preprint-coding-agents-for-generalized-task-and-motion-planning-problems-with-tom-silver-s-group-at-princeton-check-out-the-project-website-for-videos-of-the-programs-the-agents-write",
+          title: 'We released a new preprint: Coding Agents for Generalized Task and Motion Planning...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
