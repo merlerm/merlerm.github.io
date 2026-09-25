@@ -61,3 +61,27 @@
 "cancelliere":
   - firstname: ["Rossella"]
     url: https://informatica.unito.it/do/docenti.pl/Alias?rossella.cancelliere#tab-profilo
+
+"li":
+  - firstname: ["Bowen"]
+    url: https://jaraxxus-me.github.io
+
+"roy":
+  - firstname: ["Josh"]
+    url: https://joshnroy.github.io
+
+"liang":
+  - firstname: ["Yichao"]
+    url: https://yichao-liang.github.io
+
+"wang":
+  - firstname: ["Qianwei"]
+    url: https://weiqianwang123.github.io
+
+"huang":
+  - firstname: ["Yixuan"]
+    url: https://yixuanhuang98.github.io
+
+"silver":
+  - firstname: ["Tom"]
+    url: https://tomsilver.github.io

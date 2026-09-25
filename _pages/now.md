@@ -9,28 +9,27 @@ nav_order: 3
 This is a [now page](https://nownownow.com/about), a snapshot of what I am
 focused on at the moment, inspired by [Derek Sivers](https://sive.rs/now).
 
-_Last updated: 2 September 2026, from Wageningen, NL._
+_Last updated: 25 September 2026, from Trento._
+
+### Coding agents for generalized planning
+
+I am very excited that our paper [Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233) is finally out! This is the main project I have been leading for the last few months with [Tom Silver](https://tomsilver.github.io)'s group at Princeton. We gave coding agents like Claude Code and Codex access to robot simulators and asked them to write programs that solve whole classes of planning problems, and found them to be surprisingly effective. You can find videos of what the agents do on the [project website](https://agenticgentamp.github.io/), and all of our code (including the full prompts) is [here](https://github.com/tomsilver/robocode). I am very grateful to everyone who worked on this with me, it was a lot of fun, and I am super excited to continue working in this direction! If you are interested in this, feel free to reach out, I would be happy to discuss it with you.
+
+### NeurIPS 2026
+
+[QVal](https://arxiv.org/abs/2606.32034) was also accepted to the [NeurIPS 2026 Evaluations and Datasets Track](https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets) as a poster! Congratulations to Sergio, who led the project, and to all the co-authors.
 
 ### EMNLP 2026
 
-I am very excited to have three papers accepted to [EMNLP 2026](https://2026.emnlp.org/)! [DecSelfMask](https://arxiv.org/abs/2606.09466) as a main conference paper, [ViPlan](https://arxiv.org/abs/2505.13180) and [SAGE](https://arxiv.org/abs/2609.01567) as findings papers. I learned a lot during these projects and I am very grateful to all the co-authors for their collaboration and support. I will post an update once I know whether I can be in Budapest in person for the conference.
+I am very excited to have three papers accepted to [EMNLP 2026](https://2026.emnlp.org/)! [DecSelfMask](https://arxiv.org/abs/2606.09466) as a main conference paper, [ViPlan](https://arxiv.org/abs/2505.13180) and [SAGE](https://arxiv.org/abs/2609.01567) as findings papers. I learned a lot during these projects and I am very grateful to all the co-authors for their collaboration and support. I will not be in Budapest in person, but my co-authors will be there to present the papers.
 
 ### What I am working on
 
-My current main project is a collaboration with [Tom Silver](https://prpl-group.com) on
-exploring the role of coding agents for physical reasoning and planning. Our codebase
-is [here](https://github.com/tomsilver/robocode) if you are interested in following.
-We are preparing for the final steps and I hope we will have something to share very soon!
+In mid-October I will move to Tübingen to start my PhD at the [Bethge Lab](https://bethgelab.org), so I am now in the process of finding a place to live (please reach out if you have any suggestions!). I will keep working with Tom's group on coding agents for robotics and planning, and I am excited to see where we can take this next!
 
 ### Reading and free time
 
-I just came back from a great vacation in Crete, and am now spending this and the next week working remotely from my girlfriend's house in Wageningen, NL, where she studies. In vacation I read [The Year of the Hare](https://www.goodreads.com/book/show/656876.The_Year_of_the_Hare) by Arto Paasilinna, a very popular and fun short Finnish book. I really enjoyed staying in touch with Finland and Finnish culture, and I am now looking forward to reading more Finnish literature.
-
-I am currently reading [The Laws of Thought](https://www.goodreads.com/book/show/231127455-the-laws-of-thought)
-by another Princeton Tom, Tom Griffiths. There is also an excellent podcast, [The Cognition Project](https://open.spotify.com/show/7rhwBGhEQCtO9cBguazFsq),
-which documents all the interviews that Tom has done with cognitive scientists and AI researchers for the book.
-
-This week, I have also been re-playing [A Short Hike](https://ashorthike.com/), a very relaxing and fun game that I had played a few years ago. I am thinking of trying to learn some more about game development, and this game is a great inspiration for that. I would also like to read some more on the topic!
+This week, I have been playing [Absolum](https://playabsolum.com), a rogue-lite game that I am really enjoying. I bought this physically for my Nintendo Switch, and in general I am very excited about filling out my collection of physical games with more exciting indie titles.
 
 Perhaps some day when I find some more free time I will get around to setting up a page on the website to share my favorite books and games.
 
