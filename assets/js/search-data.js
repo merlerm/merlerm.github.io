@@ -85,6 +85,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-released-a-new-preprint-coding-agents-for-generalized-task-and-motion-planning-problems-with-tom-silver-s-group-at-princeton-check-out-the-project-website-for-videos-of-the-programs-the-agents-write",
           title: 'We released a new preprint: Coding Agents for Generalized Task and Motion Planning...',
           description: "",
+          section: "News",},{id: "news-we-released-a-new-preprint-empiric-experiment-driven-learning-of-residual-world-models-for-robot-planning-this-was-a-great-project-led-by-yichao-liang",
+          title: 'We released a new preprint: EMPIRIC: Experiment-Driven Learning of Residual World Models for...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
