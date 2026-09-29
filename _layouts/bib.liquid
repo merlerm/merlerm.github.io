@@ -151,7 +151,7 @@
           {%- if superscripts != '' -%}
             {%- assign more_authors_show = more_authors_show | append: '<sup>' | append: superscripts | append: '</sup>' -%}
           {%- endif -%}
-          {%- unless forloop.last -%}, {% endunless -%}
+          {%- unless forloop.last -%}{%- assign more_authors_show = more_authors_show | append: ', ' -%}{%- endunless -%}
         {%- endfor -%}
         , and
         <span

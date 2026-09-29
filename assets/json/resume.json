@@ -123,6 +123,13 @@
       "summary": "<strong>Matteo Merler</strong>†, Nicola Dainese†, Minttu Alakuijala, Giovanni Bonetta, Pietro Ferrazzi, Yu Tian, Bernardo Magnini, Pekka Marttinen"
     },
     {
+      "name": "EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-09-28",
+      "url": "https://arxiv.org/pdf/2609.35047",
+      "summary": "Yichao Liang, Amber Li, Dat Nguyen†, Emily Bunnapradist†, Michelangelo Naim†, Sreela Kodali†, <strong>Matteo Merler</strong>, Bowen Li, Kiran Gopinathan, Yiyun Liu, Nikhil Pimpalkhare, Joshua B. Tenenbaum, Adrian Weller, Zenna Tavares, Tom Silver, Kevin Ellis"
+    },
+    {
       "name": "Coding Agents for Generalized Task and Motion Planning Problems",
       "publisher": "arXiv preprint",
       "releaseDate": "2026-09-24",

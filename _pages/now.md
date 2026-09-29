@@ -9,11 +9,15 @@ nav_order: 3
 This is a [now page](https://nownownow.com/about), a snapshot of what I am
 focused on at the moment, inspired by [Derek Sivers](https://sive.rs/now).
 
-_Last updated: 25 September 2026, from Trento._
+_Last updated: 29 September 2026, from Jesolo._
 
 ### Coding agents for generalized planning
 
 I am very excited that our paper [Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233) is finally out! This is the main project I have been leading for the last few months with [Tom Silver](https://tomsilver.github.io)'s group at Princeton. We gave coding agents like Claude Code and Codex access to robot simulators and asked them to write programs that solve whole classes of planning problems, and found them to be surprisingly effective. You can find videos of what the agents do on the [project website](https://agenticgentamp.github.io/), and all of our code (including the full prompts) is [here](https://github.com/tomsilver/robocode). I am very grateful to everyone who worked on this with me, it was a lot of fun, and I am super excited to continue working in this direction! If you are interested in this, feel free to reach out, I would be happy to discuss it with you.
+
+### EMPIRIC
+
+We also released [EMPIRIC](https://arxiv.org/abs/2609.35047), a great project led by [Yichao Liang](https://yichao-liang.github.io) with Tom Silver and [Kevin Ellis](https://www.cs.cornell.edu/~ellisk/). A robot learns physics that its simulator is missing, like glue or wind, by running experiments and writing what it learns as code. Check out the [project website](https://yichao-liang.github.io/empiric) to see it in action!
 
 ### NeurIPS 2026
 

@@ -65,6 +65,8 @@
 "li":
   - firstname: ["Bowen"]
     url: https://jaraxxus-me.github.io
+  - firstname: ["Amber"]
+    url: https://amburger66.github.io
 
 "roy":
   - firstname: ["Josh"]
@@ -85,3 +87,47 @@
 "silver":
   - firstname: ["Tom"]
     url: https://tomsilver.github.io
+
+"tenenbaum":
+  - firstname: ["Joshua", "Joshua B."]
+    url: https://cocosci.mit.edu/josh-tenenbaum/
+
+"weller":
+  - firstname: ["Adrian"]
+    url: https://mlg.eng.cam.ac.uk/adrian/
+
+"tavares":
+  - firstname: ["Zenna"]
+    url: https://www.zenna.org
+
+"ellis":
+  - firstname: ["Kevin"]
+    url: https://www.cs.cornell.edu/~ellisk/
+
+"nguyen":
+  - firstname: ["Dat"]
+    url: https://www.basis.ai/about/people/dat-nguyen/
+
+"bunnapradist":
+  - firstname: ["Emily"]
+    url: https://www.basis.ai/about/people/emily-bunnapradist/
+
+"naim":
+  - firstname: ["Michelangelo"]
+    url: https://naiimic.github.io
+
+"kodali":
+  - firstname: ["Sreela"]
+    url: https://www.basis.ai/about/people/sreela-kodali/
+
+"gopinathan":
+  - firstname: ["Kiran"]
+    url: https://kirancodes.me
+
+"liu":
+  - firstname: ["Yiyun"]
+    url: https://electriclam.com
+
+"pimpalkhare":
+  - firstname: ["Nikhil"]
+    url: https://nikhilpim.github.io
