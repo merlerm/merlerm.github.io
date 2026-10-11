@@ -7,8 +7,24 @@
     "location": {
       "city": "Trento, IT"
     },
-    "summary": "I am a researcher at the FBK NLP in Trento, Italy. This Fall, I will start my PhD at the Bethge Lab in Tübingen, Germany, as an ELLIS PhD Student and as part of the International Max Planck Research School for Intelligent Systems (IMPRS-IS). I also work with Tom Silver's group for robotics and planning in Princeton, US. Previously, I obtained my MSc degree in Machine Learning, Data Science and Artificial Intelligence from Aalto University in Helsinki, Finland.<br><br>I want to build autonomous AI agents that learn from experience and adapt quickly to novel situations. I am interested in how agents turn prior knowledge and experience into effective behavior, and what they do when their existing knowledge or strategies are no longer sufficient.<br><br>My recent work explores executable world models and policies: using language models to construct programs that can be tested, revised, and reused to plan and act. I am particularly interested in how agents recognize the limits of these solutions, recover from unexpected situations, and retain what they learn. I work with both simulated games and real-world robotics as environments for agents to learn and adapt in. I am also curious about the connections between AI and cognitive science, and how insights from human cognition can inform the development of more intelligent agents.<br><br>You can also see what I am up to right now."
+    "summary": "I am a researcher at FBK NLP in Trento, Italy, and I work with Tom Silver's group in Princeton on robotics and planning. This Fall, I will start my PhD at the Bethge Lab in Tübingen as an ELLIS and IMPRS-IS PhD student.<br><br>I want to build AI agents that learn from experience and adapt quickly to new situations. My recent work uses language models to write executable world models and policies: programs that can be tested, revised, and reused to plan and act, in both simulated games and real-world robotics.<br><br>My work has been published at NeurIPS (2024, 2026) and EMNLP 2026. My MSc thesis at Aalto University, published at NeurIPS 2024, received the School of Science Master's Thesis Award, given to three theses among 517 MSc graduates in 2024. I graduated with honors from both my MSc and my BSc at the University of Trento."
   },
+  "selected_publications": [
+    {
+      "name": "Coding Agents for Generalized Task and Motion Planning Problems",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-09-24",
+      "url": "https://arxiv.org/pdf/2609.30233",
+      "summary": "<strong>Matteo Merler</strong>, Bowen Li, Josh Roy, Yichao Liang, Qianwei Wang, Yixuan Huang, Tom Silver"
+    },
+    {
+      "name": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "publisher": "Advances in Neural Information Processing Systems 37 (NeurIPS 2024)",
+      "releaseDate": "2024-12-13",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6f479ea488e0908ac8b1b37b27fd134c-Abstract-Conference.html",
+      "summary": "Nicola Dainese†, <strong>Matteo Merler</strong>†, Minttu Alakuijala, Pekka Marttinen"
+    }
+  ],
   "work": [
     {
       "name": "Fondazione Bruno Kessler",
@@ -65,7 +81,7 @@
       "courses": [
         "Graduated with honors, with a <strong>final grade of 5.0/5.0</strong> and a <strong>GPA of 5.0/5.0</strong>.",
         "<a href=\"https://aaltodoc.aalto.fi/items/261e000b-a251-423a-b4f4-9f5c7de4a0f6\">Thesis</a>: <strong>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search</strong>, supervised by Prof. Pekka Marttinen, published at NeurIPS 2024.",
-        "Thesis awarded as one of the three <strong>best MSc theses of 2024</strong> at the School of Science.",
+        "Thesis received the School of Science <strong>Master's Thesis Award</strong>, given to three theses among 517 MSc graduates in 2024.",
         "Received the Dean's Scholarship for outstanding academic performance."
       ],
       "transcript": "transcript_matteo_merler_aalto.pdf"
@@ -90,7 +106,9 @@
       "startDate": "2014-09-01",
       "endDate": "2019-07-04",
       "url": "https://liceodavincitn.it",
-      "courses": ["Graduated with a <strong>final grade of 100/100</strong>."]
+      "courses": [
+        "Graduated with a <strong>final grade of 100/100</strong>."
+      ]
     }
   ],
   "publications": [
@@ -179,7 +197,7 @@
   "awards": [
     {
       "title": "Master's Thesis Award",
-      "summary": "My Master's Thesis was awarded as one of the three best MSc theses of 2024 at the School of Science.",
+      "summary": "My Master's Thesis received the School of Science Master's Thesis Award, given to three theses among 517 MSc graduates in 2024.",
       "url": "https://www.aalto.fi/en/news/school-of-science-awards-outstanding-doctoral-and-masters-theses#1-master-s-thesis-awards",
       "date": "2025-04-03",
       "awarder": "Aalto University, School of Science"

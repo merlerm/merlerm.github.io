@@ -3,13 +3,14 @@
 Sync the CV summary (rendercv/resume.yaml -> sections.summary) from _pages/about.md.
 
 _pages/about.md is the single source of truth for the bio/summary. This script
-regenerates ONLY the `summary:` block of resume.yaml from the about-page body, so the
-CV PDF (rendered from the YAML) and the website CV page (resume.json basics.summary,
+regenerates ONLY the `summary:` block of resume.yaml from about.md, so the CV PDF
+(rendered from the YAML) and the website CV page (resume.json basics.summary,
 converted by bin/yaml_to_json_resume.py) stay in sync. You only ever edit about.md.
 
-Each paragraph of the about body becomes one summary entry. Markdown links
-([text](url)) are stripped to their plain text for the CV summary; other markdown
-(e.g. **bold**) is preserved.
+If the about.md front matter has a `cv_summary:` list, each item becomes one summary
+entry (a shorter CV bio). Otherwise each paragraph of the about body is used.
+Markdown links ([text](url)) are stripped to their plain text for the CV summary;
+other markdown (e.g. **bold**) is preserved.
 
 Usage:
   python3 bin/about_to_summary.py --about _pages/about.md --resume rendercv/resume.yaml
@@ -25,14 +26,16 @@ import argparse
 import re
 import sys
 
+import yaml
 
-def strip_front_matter(text: str) -> str:
-    """Drop a leading Jekyll '--- ... ---' front matter block."""
+
+def split_front_matter(text: str) -> tuple[dict, str]:
+    """Split a leading Jekyll '--- ... ---' front matter block into (data, body)."""
     if text.lstrip().startswith("---"):
         parts = text.split("---", 2)
         if len(parts) == 3:
-            return parts[2]
-    return text
+            return yaml.safe_load(parts[1]) or {}, parts[2]
+    return {}, text
 
 
 def strip_md_links(s: str) -> str:
@@ -104,10 +107,14 @@ def main() -> None:
             print(f"Not found: {p}", file=sys.stderr)
             sys.exit(2)
 
-    body = strip_front_matter(about_path.read_text(encoding="utf-8"))
-    paragraphs = get_paragraphs(body)
+    front_matter, body = split_front_matter(about_path.read_text(encoding="utf-8"))
+    cv_summary = front_matter.get("cv_summary")
+    if cv_summary:
+        paragraphs = get_paragraphs("\n\n".join(cv_summary))
+    else:
+        paragraphs = get_paragraphs(body)
     if not paragraphs:
-        print(f"No body paragraphs found in {about_path}; nothing to sync.", file=sys.stderr)
+        print(f"No summary paragraphs found in {about_path}; nothing to sync.", file=sys.stderr)
         sys.exit(2)
 
     block_lines = render_block(paragraphs)

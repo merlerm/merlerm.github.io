@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Sync the `publications:` section of rendercv/resume.yaml from _bibliography/papers.bib.
+Sync the `publications:` and `selected_publications:` sections of rendercv/resume.yaml
+from _bibliography/papers.bib.
 
 papers.bib is the single source of truth for publications. This script regenerates
 the `publications:` block of the RenderCV YAML so that both the CV PDF (rendered from
@@ -10,9 +11,10 @@ bin/yaml_to_json_resume.py) stay in sync. You only ever add new papers to papers
 Usage:
   python3 bin/bib_to_publications.py --bib _bibliography/papers.bib --resume rendercv/resume.yaml
 
-The publications block is AUTO-GENERATED: do not hand-edit it in resume.yaml, edit the
-.bib instead. Only the `publications:` block is touched; the rest of resume.yaml is left
-byte-for-byte identical.
+Both blocks are AUTO-GENERATED: do not hand-edit them in resume.yaml, edit the .bib
+instead. `selected_publications:` lists the entries marked `selected = {true}` (the same
+flag the website's about page uses) and is only written if the key exists in the YAML.
+Only these blocks are touched; the rest of resume.yaml is left byte-for-byte identical.
 
 Mapping rules (BibTeX -> RenderCV publication entry):
   title    <- title
@@ -180,6 +182,7 @@ def load_publications(bib_path: Path, owner: str) -> list[dict]:
         pub = entry_to_pub(entry, owner)
         if not pub["title"]:
             continue
+        pub["selected"] = is_truthy(entry.get("selected", ""))
         pubs.append(pub)
 
     # Most recent first; stable for equal dates so .bib order breaks ties.
@@ -187,9 +190,9 @@ def load_publications(bib_path: Path, owner: str) -> list[dict]:
     return pubs
 
 
-def render_block(pubs: list[dict]) -> list[str]:
-    """Render the publications block as a list of lines (4-space base indent)."""
-    lines = ["    publications:"]
+def render_block(pubs: list[dict], key: str = "publications") -> list[str]:
+    """Render a publications block as a list of lines (4-space base indent)."""
+    lines = [f"    {key}:"]
     lines.append(
         "      # AUTO-GENERATED from _bibliography/papers.bib by "
         "bin/bib_to_publications.py -- do not edit by hand."
@@ -210,14 +213,18 @@ def render_block(pubs: list[dict]) -> list[str]:
     return lines
 
 
-def splice_publications(resume_text: str, block_lines: list[str]) -> str:
+def has_section(resume_text: str, key: str) -> bool:
+    return any(ln.rstrip() == f"    {key}:" for ln in resume_text.split("\n"))
+
+
+def splice_publications(resume_text: str, block_lines: list[str], key: str = "publications") -> str:
     lines = resume_text.split("\n")
     start = next(
-        (i for i, ln in enumerate(lines) if ln.rstrip() == "    publications:"),
+        (i for i, ln in enumerate(lines) if ln.rstrip() == f"    {key}:"),
         None,
     )
     if start is None:
-        raise SystemExit("Could not find a `    publications:` key in the resume YAML.")
+        raise SystemExit(f"Could not find a `    {key}:` key in the resume YAML.")
     # The block ends at the next sibling mapping key at the same (4-space) indent.
     end = next(
         (i for i in range(start + 1, len(lines)) if re.match(r"^    [A-Za-z_]", lines[i])),
@@ -247,10 +254,13 @@ def main() -> None:
             sys.exit(2)
 
     pubs = load_publications(bib_path, args.owner)
-    block_lines = render_block(pubs)
-
     original = resume_path.read_text(encoding="utf-8")
-    updated = splice_publications(original, block_lines)
+    updated = splice_publications(original, render_block(pubs))
+    if has_section(updated, "selected_publications"):
+        selected = [p for p in pubs if p["selected"]]
+        updated = splice_publications(
+            updated, render_block(selected, "selected_publications"), "selected_publications"
+        )
 
     if updated == original:
         print(f"resume.yaml already up to date ({len(pubs)} publications).")

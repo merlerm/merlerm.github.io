@@ -93,6 +93,8 @@ def convert(yaml_data: dict) -> dict:
     else:
         basics["summary"] = md_to_html(summary_list or "")
     out["basics"] = basics
+    # placeholder so selected publications come right after basics on the website CV
+    out["selected_publications"] = []
 
     # work / experience
     out["work"] = []
@@ -127,9 +129,7 @@ def convert(yaml_data: dict) -> dict:
             it["transcript"] = ed.get("transcript")
         out["education"].append(it)
 
-    # publications
-    out["publications"] = []
-    for p in sections.get("publications", []) or []:
+    def map_publication(p):
         it = {}
         raw_title = p.get("title") or p.get("name")
         # Extract URL from markdown link in title if present
@@ -151,7 +151,13 @@ def convert(yaml_data: dict) -> dict:
             it["publisher"] = md_to_html(it.get("publisher"))
         if it.get("summary"):
             it["summary"] = md_to_html(it.get("summary"))
-        out["publications"].append(it)
+        return it
+
+    # publications
+    out["selected_publications"] = [map_publication(p) for p in sections.get("selected_publications", []) or []]
+    if not out["selected_publications"]:
+        del out["selected_publications"]
+    out["publications"] = [map_publication(p) for p in sections.get("publications", []) or []]
 
     # volunteer
     out["volunteer"] = []

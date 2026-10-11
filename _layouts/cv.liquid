@@ -43,7 +43,7 @@ layout: default
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
             <div class="cv-card-header">
-              <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+              <h3 class="card-title font-weight-medium">{{ data[0] | replace: '_', ' ' | capitalize }}</h3>
               {% if data[0] == 'basics' and page.cv_pdf %}
                 <a
                   {% if page.cv_pdf contains '://' %}
@@ -75,7 +75,7 @@ layout: default
                   {% include resume/awards.liquid %}
                 {% when 'skills' %}
                   {% include resume/skills.liquid %}
-                {% when 'publications' %}
+                {% when 'publications', 'selected_publications' %}
                   {% include resume/publications.liquid %}
                 {% when 'languages' %}
                   {% include resume/languages.liquid %}
