@@ -1,6 +1,6 @@
 cv:
   name: "Matteo Merler"
-  location: "Trento, IT"
+  location: "Tübingen, DE"
   email: "matteo.merler@gmail.com"
   phone: "+39 342 3646961"
   website: "https://merlerm.github.io/"
@@ -16,7 +16,7 @@ cv:
   sections:
     summary:
       # AUTO-GENERATED from _pages/about.md by bin/about_to_summary.py -- do not edit by hand.
-      - "I am a researcher at FBK NLP in Trento, Italy, and I work with Tom Silver's group in Princeton on robotics and planning. This Fall, I will start my PhD at the Bethge Lab in Tübingen as an ELLIS and IMPRS-IS PhD student."
+      - "I am a PhD student at the Bethge Lab at the Tübingen AI Center, University of Tübingen, as part of the ELLIS PhD program and IMPRS-IS. I also work with Tom Silver's group in Princeton on robotics and planning. Previously, I was a researcher at FBK NLP in Trento, Italy."
       - "I want to build AI agents that learn from experience and adapt quickly to new situations. My recent work uses language models to write executable world models and policies: programs that can be tested, revised, and reused to plan and act, in both simulated games and real-world robotics."
       - "My work has been published at NeurIPS (2024, 2026) and EMNLP 2026. My MSc thesis at Aalto University, published at NeurIPS 2024, received the School of Science Master's Thesis Award, given to three theses among 517 MSc graduates in 2024. I graduated with honors from both my MSc and my BSc at the University of Trento."
     selected_publications:
@@ -43,6 +43,16 @@ cv:
         journal: "_Advances in Neural Information Processing Systems 37 (NeurIPS 2024)_"
         url: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6f479ea488e0908ac8b1b37b27fd134c-Abstract-Conference.html"
     education:
+      - institution: "[University of Tübingen](https://uni-tuebingen.de/en/)"
+        area: "Machine Learning"
+        degree: "Ph.D."
+        link: "https://uni-tuebingen.de/en/"
+        start_date: "2026-11-01"
+        end_date: "present"
+        highlights:
+          - "PhD student in the [Bethge Lab](https://bethgelab.org) at the [Tübingen AI Center](https://tuebingen.ai), advised by Prof. Matthias Bethge."
+          - "Scholar of the **International Max Planck Research School for Intelligent Systems** ([IMPRS-IS](https://imprs.is.mpg.de/))."
+          - "Member of the **[ELLIS PhD Program](https://ellis.eu/research/phd-postdoc)**."
       - institution: "[Aalto University](https://www.aalto.fi/en/study-options/machine-learning-data-science-and-artificial-intelligence-master-of-science-technology)"
         area: "Machine Learning, Data Science and Artificial Intelligence"
         degree: "M.Sc."
@@ -75,19 +85,26 @@ cv:
         highlights:
           - "Graduated with a **final grade of 100/100**."
     experience:
+      - company: "[Tübingen AI Center, University of Tübingen](https://tuebingen.ai)"
+        position: "Doctoral Researcher"
+        link: "https://tuebingen.ai"
+        location: "Tübingen, Germany"
+        start_date: "2026-11-01"
+        end_date: "present"
+        summary: Doctoral researcher in the [Bethge Lab](https://bethgelab.org), supervised by Prof. Matthias Bethge, working on AI agents that learn from experience by writing and revising code.
       - company: "[Fondazione Bruno Kessler](https://www.fbk.eu/en/)"
         position: "Researcher"
         link: "https://www.fbk.eu/en/"
         location: "Trento, Italy"
         start_date: "2025-01-07"
-        end_date: "present"
-        summary: Working as a pre-doctoral researcher ("Researcher 4 contract") in the [Natural Language Processing Lab](https://nlplab.fbk.eu/) under the supervision of Bernardo Magnini.
+        end_date: "2026-10"
+        summary: Worked as a pre-doctoral researcher ("Researcher 4 contract") in the [Natural Language Processing Lab](https://nlplab.fbk.eu/) under the supervision of Bernardo Magnini.
         highlights:
-          - "Lead researcher on FBK's side of a joint project on **planning with Vision-Language Models** (with Aalto University), under resubmission."
-          - "Led a second project on **selectively integrating VLM guidance with model-free Reinforcement Learning** based on the agent's own uncertainty, with a preliminary version accepted at the CAIPI workshop at ECAI 2025 and a full paper in preparation."
-          - "Participating on private research for collaborations with companies."
-          - "Contributing to the draft of a **Horizon Europe funding proposal**, leading the lab's team for Language and Reinforcement Learning."
-          - "Active participation to the research group's scientific activities, including monthly meetings and collaborative discussions."
+          - "Lead researcher on FBK's side of a joint project on **planning with Vision-Language Models** (with Aalto University), published in Findings of EMNLP 2026."
+          - "Led a second project on **selectively integrating VLM guidance with model-free Reinforcement Learning** based on the agent's own uncertainty, with a preliminary version accepted at the CAIPI workshop at ECAI 2025 and the full paper published in Findings of EMNLP 2026."
+          - "Participated in private research for collaborations with companies."
+          - "Contributed to the draft of a **Horizon Europe funding proposal**, leading the lab's team for Language and Reinforcement Learning."
+          - "Actively participated in the research group's scientific activities, including monthly meetings and collaborative discussions."
       - company: "[Aalto University](https://www.aalto.fi/en/department-of-computer-science)"
         position: "Research Assistant"
         location: "Helsinki, Finland"
@@ -98,7 +115,7 @@ cv:
         highlights:
           - "Conducted a research project on **Symbolic Regression with Large Language Models**, presented at the ACL Student Research Workshop."
           - "Co-led a research project on **Code World Models** with PhD candidate Nicola Dainese, forming the basis of my Master's Thesis, accepted at NeurIPS 2024."
-          - "Started a project on **planning with Vision-Language Models**, later continued by both Aalto University and my current group at FBK."
+          - "Started a project on **planning with Vision-Language Models**, later continued by both Aalto University and my group at FBK."
           - "Regularly attended lab meetings and participated in broader academic activities, including the Seminar on Large Language Models."
       - company: "[ThinkIN](https://thinkin.io/en)"
         position: "Internship"
@@ -308,6 +325,7 @@ design:
     alignment: left
     connections:
       show_icons: true
+      phone_number_format: international
       separator: ""
       space_between_connections: 0.5cm
   section_titles:
