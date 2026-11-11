@@ -62,6 +62,8 @@ def convert(yaml_data: dict) -> dict:
         if not deg:
             return deg
         mapping = {
+            "Ph.D.": "Doctoral Student",
+            "PhD": "Doctoral Student",
             "M.Sc.": "Master of Science",
             "MSc": "Master of Science",
             "M.Sc": "Master of Science",

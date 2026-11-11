@@ -9,10 +9,13 @@ permalink: /contact/
 <div class="contact-content">
   <div class="contact-cards">
     <div class="contact-card">
-      <a href="mailto:mmerler@fbk.eu">
-        <i class="fa-solid fa-envelope"></i>
-        <div class="card-label">Work email</div>
-        <div class="card-value">mmerler@fbk.eu</div>
+      <i class="fa-solid fa-envelope"></i>
+      <div class="card-label">Work email</div>
+      <a href="mailto:matteo.merler@bethgelab.org">
+        <div class="card-value">matteo.merler@bethgelab.org</div>
+      </a>
+      <a href="mailto:matteo.merler@uni-tuebingen.de">
+        <div class="card-value">matteo.merler@uni-tuebingen.de</div>
       </a>
     </div>
     <div class="contact-card">

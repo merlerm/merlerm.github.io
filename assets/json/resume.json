@@ -5,9 +5,9 @@
     "phone": "+39 342 3646961",
     "url": "https://merlerm.github.io/",
     "location": {
-      "city": "Trento, IT"
+      "city": "Tübingen, DE"
     },
-    "summary": "I am a researcher at FBK NLP in Trento, Italy, and I work with Tom Silver's group in Princeton on robotics and planning. This Fall, I will start my PhD at the Bethge Lab in Tübingen as an ELLIS and IMPRS-IS PhD student.<br><br>I want to build AI agents that learn from experience and adapt quickly to new situations. My recent work uses language models to write executable world models and policies: programs that can be tested, revised, and reused to plan and act, in both simulated games and real-world robotics.<br><br>My work has been published at NeurIPS (2024, 2026) and EMNLP 2026. My MSc thesis at Aalto University, published at NeurIPS 2024, received the School of Science Master's Thesis Award, given to three theses among 517 MSc graduates in 2024. I graduated with honors from both my MSc and my BSc at the University of Trento."
+    "summary": "I am a PhD student at the Bethge Lab at the Tübingen AI Center, University of Tübingen, as part of the ELLIS PhD program and IMPRS-IS. I also work with Tom Silver's group in Princeton on robotics and planning. Previously, I was a researcher at FBK NLP in Trento, Italy.<br><br>I want to build AI agents that learn from experience and adapt quickly to new situations. My recent work uses language models to write executable world models and policies: programs that can be tested, revised, and reused to plan and act, in both simulated games and real-world robotics.<br><br>My work has been published at NeurIPS (2024, 2026) and EMNLP 2026. My MSc thesis at Aalto University, published at NeurIPS 2024, received the School of Science Master's Thesis Award, given to three theses among 517 MSc graduates in 2024. I graduated with honors from both my MSc and my BSc at the University of Trento."
   },
   "selected_publications": [
     {
@@ -27,19 +27,28 @@
   ],
   "work": [
     {
+      "name": "Tübingen AI Center, University of Tübingen",
+      "position": "Doctoral Researcher",
+      "location": "Tübingen, Germany",
+      "url": "https://tuebingen.ai",
+      "startDate": "2026-11-01",
+      "endDate": "present",
+      "summary": "Doctoral researcher in the <a href=\"https://bethgelab.org\">Bethge Lab</a>, supervised by Prof. Matthias Bethge, working on AI agents that learn from experience by writing and revising code."
+    },
+    {
       "name": "Fondazione Bruno Kessler",
       "position": "Researcher",
       "location": "Trento, Italy",
       "url": "https://www.fbk.eu/en/",
       "startDate": "2025-01-07",
-      "endDate": "present",
-      "summary": "Working as a pre-doctoral researcher (\"Researcher 4 contract\") in the <a href=\"https://nlplab.fbk.eu/\">Natural Language Processing Lab</a> under the supervision of Bernardo Magnini.",
+      "endDate": "2026-10",
+      "summary": "Worked as a pre-doctoral researcher (\"Researcher 4 contract\") in the <a href=\"https://nlplab.fbk.eu/\">Natural Language Processing Lab</a> under the supervision of Bernardo Magnini.",
       "highlights": [
-        "Lead researcher on FBK's side of a joint project on <strong>planning with Vision-Language Models</strong> (with Aalto University), under resubmission.",
-        "Led a second project on <strong>selectively integrating VLM guidance with model-free Reinforcement Learning</strong> based on the agent's own uncertainty, with a preliminary version accepted at the CAIPI workshop at ECAI 2025 and a full paper in preparation.",
-        "Participating on private research for collaborations with companies.",
-        "Contributing to the draft of a <strong>Horizon Europe funding proposal</strong>, leading the lab's team for Language and Reinforcement Learning.",
-        "Active participation to the research group's scientific activities, including monthly meetings and collaborative discussions."
+        "Lead researcher on FBK's side of a joint project on <strong>planning with Vision-Language Models</strong> (with Aalto University), published in Findings of EMNLP 2026.",
+        "Led a second project on <strong>selectively integrating VLM guidance with model-free Reinforcement Learning</strong> based on the agent's own uncertainty, with a preliminary version accepted at the CAIPI workshop at ECAI 2025 and the full paper published in Findings of EMNLP 2026.",
+        "Participated in private research for collaborations with companies.",
+        "Contributed to the draft of a <strong>Horizon Europe funding proposal</strong>, leading the lab's team for Language and Reinforcement Learning.",
+        "Actively participated in the research group's scientific activities, including monthly meetings and collaborative discussions."
       ]
     },
     {
@@ -53,7 +62,7 @@
       "highlights": [
         "Conducted a research project on <strong>Symbolic Regression with Large Language Models</strong>, presented at the ACL Student Research Workshop.",
         "Co-led a research project on <strong>Code World Models</strong> with PhD candidate Nicola Dainese, forming the basis of my Master's Thesis, accepted at NeurIPS 2024.",
-        "Started a project on <strong>planning with Vision-Language Models</strong>, later continued by both Aalto University and my current group at FBK.",
+        "Started a project on <strong>planning with Vision-Language Models</strong>, later continued by both Aalto University and my group at FBK.",
         "Regularly attended lab meetings and participated in broader academic activities, including the Seminar on Large Language Models."
       ]
     },
@@ -71,6 +80,19 @@
     }
   ],
   "education": [
+    {
+      "institution": "University of Tübingen",
+      "area": "Machine Learning",
+      "studyType": "Doctoral Student",
+      "startDate": "2026-11-01",
+      "endDate": "present",
+      "url": "https://uni-tuebingen.de/en/",
+      "courses": [
+        "PhD student in the <a href=\"https://bethgelab.org\">Bethge Lab</a> at the <a href=\"https://tuebingen.ai\">Tübingen AI Center</a>, advised by Prof. Matthias Bethge.",
+        "Scholar of the <strong>International Max Planck Research School for Intelligent Systems</strong> (<a href=\"https://imprs.is.mpg.de/\">IMPRS-IS</a>).",
+        "Member of the <strong><a href=\"https://ellis.eu/research/phd-postdoc\">ELLIS PhD Program</a></strong>."
+      ]
+    },
     {
       "institution": "Aalto University",
       "area": "Machine Learning, Data Science and Artificial Intelligence",
