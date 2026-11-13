@@ -143,21 +143,21 @@
       "name": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
       "publisher": "Findings of the Association for Computational Linguistics: EMNLP 2026",
       "releaseDate": "2026-10-24",
-      "url": "https://arxiv.org/pdf/2609.01567",
+      "url": "https://aclanthology.org/2026.findings-emnlp.1000/",
       "summary": "Giovanni Bonetta†, <strong>Matteo Merler</strong>†, Davide Zago, Rossella Cancelliere, Bernardo Magnini"
     },
     {
       "name": "DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification",
       "publisher": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)",
       "releaseDate": "2026-10-24",
-      "url": "https://arxiv.org/pdf/2606.09466",
+      "url": "https://aclanthology.org/2026.emnlp-main.1372/",
       "summary": "Pietro Ferrazzi, <strong>Matteo Merler</strong>, Giovanni Bonetta, Alberto Lavelli, Bernardo Magnini"
     },
     {
       "name": "ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models",
       "publisher": "Findings of the Association for Computational Linguistics: EMNLP 2026",
       "releaseDate": "2026-10-24",
-      "url": "https://arxiv.org/pdf/2505.13180",
+      "url": "https://aclanthology.org/2026.findings-emnlp.1017/",
       "summary": "<strong>Matteo Merler</strong>†, Nicola Dainese†, Minttu Alakuijala, Giovanni Bonetta, Pietro Ferrazzi, Yu Tian, Bernardo Magnini, Pekka Marttinen"
     },
     {

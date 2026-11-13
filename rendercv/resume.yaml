@@ -139,7 +139,7 @@ cv:
           - "Matthias Bethge"
         journal: "_Advances in Neural Information Processing Systems 39 (NeurIPS 2026), Evaluations and Datasets Track_"
         url: "https://arxiv.org/pdf/2606.32034"
-      - title: "[Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers](https://arxiv.org/pdf/2609.01567)"
+      - title: "[Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers](https://aclanthology.org/2026.findings-emnlp.1000/)"
         date: "2026-10-24"
         authors:
           - "Giovanni Bonetta†"
@@ -148,8 +148,8 @@ cv:
           - "Rossella Cancelliere"
           - "Bernardo Magnini"
         journal: "_Findings of the Association for Computational Linguistics: EMNLP 2026_"
-        url: "https://arxiv.org/pdf/2609.01567"
-      - title: "[DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification](https://arxiv.org/pdf/2606.09466)"
+        url: "https://aclanthology.org/2026.findings-emnlp.1000/"
+      - title: "[DecSelfMask: Leveraging Unlabeled Text via Self-Relevance-Guided Masking for Decoder-Only Classification](https://aclanthology.org/2026.emnlp-main.1372/)"
         date: "2026-10-24"
         authors:
           - "Pietro Ferrazzi"
@@ -158,8 +158,8 @@ cv:
           - "Alberto Lavelli"
           - "Bernardo Magnini"
         journal: "_Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)_"
-        url: "https://arxiv.org/pdf/2606.09466"
-      - title: "[ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models](https://arxiv.org/pdf/2505.13180)"
+        url: "https://aclanthology.org/2026.emnlp-main.1372/"
+      - title: "[ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and Vision-Language Models](https://aclanthology.org/2026.findings-emnlp.1017/)"
         date: "2026-10-24"
         authors:
           - "**Matteo Merler**†"
@@ -171,7 +171,7 @@ cv:
           - "Bernardo Magnini"
           - "Pekka Marttinen"
         journal: "_Findings of the Association for Computational Linguistics: EMNLP 2026_"
-        url: "https://arxiv.org/pdf/2505.13180"
+        url: "https://aclanthology.org/2026.findings-emnlp.1017/"
       - title: "[EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning](https://arxiv.org/pdf/2609.35047)"
         date: "2026-09-28"
         authors:
